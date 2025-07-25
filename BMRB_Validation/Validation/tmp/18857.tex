@@ -1,0 +1,1214 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BMRB Validation Report
+% LaTeX Template
+% Version 1.0 (November 8, 2022)
+%
+% Author: Kumaran Baskaran
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\documentclass[12pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage{mathptmx}
+
+%\usepackage{titling}
+%\usepackage{graphicx}
+%\usepackage{longtable}
+%\graphicspath{{Figures/}{./}}
+%
+%\pretitle{
+%  \begin{center}
+%  \LARGE
+%  \includegraphics{/logo}\\[\bigskipamount]
+%}
+%\posttitle{\end{center}}
+%\title{\LARGE Chemical Shift Validation Report} % Report title
+%
+%\author{}
+%
+%\date{\today} % Date of the report
+%
+%
+%\setlength{\droptitle}{-10em}
+%
+\documentclass[12pt]{article}
+
+\makeatletter
+\def\hyphenatestring#1{\xHyphen@te#1$\unskip}
+\def\xHyphen@te{\@ifnextchar${\@gobble}{\sw@p{\hskip 0pt plus 1pt\xHyphen@te}}}
+\def\sw@p#1#2{#2#1}
+\makeatother
+\usepackage{amsmath,amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{mfirstuc}
+%\usepackage{draftwatermark}
+%\SetWatermarkLightness{ 0.9 }
+%\SetWatermarkText{\today}
+%\SetWatermarkScale{ 3 }
+\usepackage[
+%      dvipdfm,    %put here the correct(!) driver you are using
+      colorlinks=true,    %no frame around URL
+      linkcolor = blue, citecolor = blue, urlcolor = blue, % all links blue
+%      urlcolor=black,    %no colors
+%      menucolor=black,    %no colors
+%      linkcolor=black,    %no colors
+%      pagecolor=black,    %no colors
+%      bookmarks=true,    %tree-like TOC
+%      bookmarksopen=true,    %expanded when starting
+%      hyperfootnotes=false,    %no referencing of footnotes, does not compile
+%      pdfpagemode=UseOutlines    %show the bookmarks when starting the pdf viewer
+]{hyperref}
+
+\usepackage{hyperref}
+
+
+
+\usepackage{graphicx}
+\graphicspath{{Figures/}{./}}
+%\usepackage[strings]{underscore}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{soul}
+\definecolor{darkgreen}{rgb}{0.1,0.6,0.1}
+\definecolor{lightred}{rgb}{1.0,0.7,0.7}
+\definecolor{lightblue}{rgb}{0.7,0.7,1.0}
+\sethlcolor{lightred}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage[margin=2cm]{geometry}
+\usepackage[super, sort]{natbib}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+% \usepackage[Q=yes]{examplep}
+
+\bibpunct{(}{)}{;}{a}{,}{,} % required for natbib
+
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcommand{\rectangle}[1]{\tikz{\filldraw[draw=#1,fill=#1] (0,0)
+rectangle (1.6em,0.6em);}}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+%\usepackage[us,12hr]{datetime}
+\usepackage[en-US]{datetime2}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\setlength{\textheight}{23.8cm}
+\setlength{\footskip}{1cm}
+\lhead{Page \thepage}
+\chead{BMRB validation reprot}
+\rhead{18857}
+\lfoot{}
+\cfoot{ \includegraphics[width=6cm]{/logo}}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+\includegraphics[]{/logo}
+\\
+Chemical Shift Validation Report
+}
+
+
+\date{\DTMsetstyle{en-US}\today ~ -- ~ \DTMcurrenttime ~ EST}
+
+
+
+\begin{document}
+
+\maketitle 
+%This is a chemical shift validation report for a publicly released BMRB entry
+\begin{center}
+	\begin{tabular}{l c p{.8\linewidth}}
+		Entry ID& : & 18857 \\
+		Title& : & Backbone 1H, 13C,and 15N chemical shift assignments for alpha-synuclein at different pH and temperature
+ \\
+		Authors& : & Gergana A. Vandova; Kamil Tamiola; Nur A. Oktaviani; Frans A.A. Mulder \\
+		Deposited on& : & 2012-11-25 \\
+		%Released on & : & date \\
+	\end{tabular}
+\end{center}
+\vspace*{\fill}
+The following versions of software and data  were used in the production of this report:
+\begin{center}
+	\begin{tabular}{l c l}
+		PyNMRSTAR& : & 3.3.0 \\
+		RCI& : & 1.1 \\
+		ShiftChecker & : &1.2 \\
+		LACS & : & VARLACSVER \\
+		AVS & : & VARAVSVER\\
+	\end{tabular}
+\end{center}
+
+\newpage
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0pt}
+\section{Summary}
+The biological assembly is a monomer with one Entity.\\
+\subsection{ Entity information}
+\subsubsection{ Entity 1 }
+\begin{longtable}{l l l}
+Type &:& polymer\\
+Polymer type &:& polypeptide(L)\\
+Name &:& alpha\_synuclein\\
+Sequence length &:& 140\\
+Sequence &:& \multicolumn{1}{p{0.25\linewidth}}{\texttt{MDVFMKGLSKAKEGVVAAAE KTKQGVAEAAGKTKEGVLYV GSKTKEGVVHGVATVAEKTK EQVTNVGGAVVTGVTAVAQK TVEGAGSIAAATGFVKKDQL GKNEEGAPQEGILEDMPVDP DNEAYEMPSEEGYQDYEPEA }}\\
+\end{longtable}
+
+\subsection{ Chemical shift list information}
+There  are 33 chemical shift lists reproted.  The summary of the chemical shift data is given below\\
+\begin{center}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_1\\
+\hline
+Saveframe ID & 1\\
+\hline
+\capitalisewords{pH} & 2.16 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 682\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_2\\
+\hline
+Saveframe ID & 2\\
+\hline
+\capitalisewords{pH} & 2.36 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 682\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_3\\
+\hline
+Saveframe ID & 3\\
+\hline
+\capitalisewords{pH} & 2.61 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 682\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_4\\
+\hline
+Saveframe ID & 4\\
+\hline
+\capitalisewords{pH} & 2.82 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 682\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_5\\
+\hline
+Saveframe ID & 5\\
+\hline
+\capitalisewords{pH} & 3.11 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 682\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_6\\
+\hline
+Saveframe ID & 6\\
+\hline
+\capitalisewords{pH} & 3.19 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 683\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_7\\
+\hline
+Saveframe ID & 7\\
+\hline
+\capitalisewords{pH} & 3.38 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 679\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_8\\
+\hline
+Saveframe ID & 8\\
+\hline
+\capitalisewords{pH} & 3.58 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 680\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_9\\
+\hline
+Saveframe ID & 9\\
+\hline
+\capitalisewords{pH} & 3.78 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 681\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_10\\
+\hline
+Saveframe ID & 10\\
+\hline
+\capitalisewords{pH} & 4.00 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 681\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_11\\
+\hline
+Saveframe ID & 11\\
+\hline
+\capitalisewords{pH} & 4.21 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 681\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_12\\
+\hline
+Saveframe ID & 12\\
+\hline
+\capitalisewords{pH} & 4.42 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 681\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_13\\
+\hline
+Saveframe ID & 13\\
+\hline
+\capitalisewords{pH} & 4.67 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 681\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shif\_list\_14\\
+\hline
+Saveframe ID & 14\\
+\hline
+\capitalisewords{pH} & 4.87 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 547\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_15\\
+\hline
+Saveframe ID & 15\\
+\hline
+\capitalisewords{pH} & 5.02 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 682\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_16\\
+\hline
+Saveframe ID & 16\\
+\hline
+\capitalisewords{pH} & 5.21 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 681\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_17\\
+\hline
+Saveframe ID & 17\\
+\hline
+\capitalisewords{pH} & 5.42 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 681\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_18\\
+\hline
+Saveframe ID & 18\\
+\hline
+\capitalisewords{pH} & 5.57 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 682\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_19\\
+\hline
+Saveframe ID & 19\\
+\hline
+\capitalisewords{pH} & 5.71 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 681\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_20\\
+\hline
+Saveframe ID & 20\\
+\hline
+\capitalisewords{pH} & 5.85 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 682\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_21\\
+\hline
+Saveframe ID & 21\\
+\hline
+\capitalisewords{pH} & 6.09 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 681\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_22\\
+\hline
+Saveframe ID & 22\\
+\hline
+\capitalisewords{pH} & 6.34 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 592\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_23\\
+\hline
+Saveframe ID & 23\\
+\hline
+\capitalisewords{pH} & 6.55 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 592\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_24\\
+\hline
+Saveframe ID & 24\\
+\hline
+\capitalisewords{pH} & 6.74 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 680\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_25\\
+\hline
+Saveframe ID & 25\\
+\hline
+\capitalisewords{pH} & 6.94 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 680\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_26\\
+\hline
+Saveframe ID & 26\\
+\hline
+\capitalisewords{pH} & 7.10 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 679\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_27\\
+\hline
+Saveframe ID & 27\\
+\hline
+\capitalisewords{pH} & 7.34 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 677\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_28\\
+\hline
+Saveframe ID & 28\\
+\hline
+\capitalisewords{pH} & 7.51 pH\\
+\hline
+\capitalisewords{temperature} & 283 K\\
+\hline
+Number of shifts & 677\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_29\\
+\hline
+Saveframe ID & 29\\
+\hline
+\capitalisewords{pH} & 5.87 pH\\
+\hline
+\capitalisewords{temperature} & 278 K\\
+\hline
+Number of shifts & 561\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_30\\
+\hline
+Saveframe ID & 30\\
+\hline
+\capitalisewords{pH} & 5.87 pH\\
+\hline
+\capitalisewords{temperature} & 288 K\\
+\hline
+Number of shifts & 560\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_31\\
+\hline
+Saveframe ID & 31\\
+\hline
+\capitalisewords{pH} & 5.87 pH\\
+\hline
+\capitalisewords{temperature} & 293 K\\
+\hline
+Number of shifts & 550\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_32\\
+\hline
+Saveframe ID & 32\\
+\hline
+\capitalisewords{pH} & 5.87 pH\\
+\hline
+\capitalisewords{temperature} & 298 K\\
+\hline
+Number of shifts & 546\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_33\\
+\hline
+Saveframe ID & 33\\
+\hline
+\capitalisewords{pH} & 5.87 pH\\
+\hline
+\capitalisewords{temperature} & 303 K\\
+\hline
+Number of shifts & 546\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 37.8\%\\
+\hline
+\end{longtable}
+
+\end{center}
+\section{Completeness}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 682/708 (96.3\%)& 279/293 (95.2\%)& 269/280 (96.1\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 682/1724 (39.6\%)& 279/943 (29.6\%)& 269/620 (43.4\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 682/708 (96.3\%)& 279/293 (95.2\%)& 269/280 (96.1\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 682/1724 (39.6\%)& 279/943 (29.6\%)& 269/620 (43.4\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 682/708 (96.3\%)& 279/293 (95.2\%)& 269/280 (96.1\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 682/1724 (39.6\%)& 279/943 (29.6\%)& 269/620 (43.4\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 682/708 (96.3\%)& 279/293 (95.2\%)& 269/280 (96.1\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 682/1724 (39.6\%)& 279/943 (29.6\%)& 269/620 (43.4\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 682/708 (96.3\%)& 279/293 (95.2\%)& 269/280 (96.1\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 682/1724 (39.6\%)& 279/943 (29.6\%)& 269/620 (43.4\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 683/708 (96.5\%)& 279/293 (95.2\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 683/1724 (39.6\%)& 279/943 (29.6\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 679/708 (95.9\%)& 277/293 (94.5\%)& 268/280 (95.7\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 679/1724 (39.4\%)& 277/943 (29.4\%)& 268/620 (43.2\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 680/708 (96.0\%)& 277/293 (94.5\%)& 269/280 (96.1\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 680/1724 (39.4\%)& 277/943 (29.4\%)& 269/620 (43.4\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 681/708 (96.2\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 681/1724 (39.5\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 681/708 (96.2\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 681/1724 (39.5\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 681/708 (96.2\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 681/1724 (39.5\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 681/708 (96.2\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 681/1724 (39.5\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 681/708 (96.2\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 681/1724 (39.5\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 547/708 (77.3\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 0/135 (0.0\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 547/1724 (31.7\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 0/161 (0.0\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 682/708 (96.3\%)& 278/293 (94.9\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 682/1724 (39.6\%)& 278/943 (29.5\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 681/708 (96.2\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 681/1724 (39.5\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 681/708 (96.2\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 681/1724 (39.5\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 682/708 (96.3\%)& 278/293 (94.9\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 682/1724 (39.6\%)& 278/943 (29.5\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 681/708 (96.2\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 681/1724 (39.5\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 682/708 (96.3\%)& 278/293 (94.9\%)& 270/280 (96.4\%)& 134/135 (99.3\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 682/1724 (39.6\%)& 278/943 (29.5\%)& 270/620 (43.5\%)& 134/161 (83.2\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 681/708 (96.2\%)& 278/293 (94.9\%)& 270/280 (96.4\%)& 133/135 (98.5\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 681/1724 (39.5\%)& 278/943 (29.5\%)& 270/620 (43.5\%)& 133/161 (82.6\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 592/708 (83.6\%)& 277/293 (94.5\%)& 182/280 (65.0\%)& 133/135 (98.5\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 592/1724 (34.3\%)& 277/943 (29.4\%)& 182/620 (29.4\%)& 133/161 (82.6\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 592/708 (83.6\%)& 277/293 (94.5\%)& 182/280 (65.0\%)& 133/135 (98.5\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 592/1724 (34.3\%)& 277/943 (29.4\%)& 182/620 (29.4\%)& 133/161 (82.6\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 680/708 (96.0\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 133/135 (98.5\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 680/1724 (39.4\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 133/161 (82.6\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 680/708 (96.0\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 133/135 (98.5\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 680/1724 (39.4\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 133/161 (82.6\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 679/708 (95.9\%)& 277/293 (94.5\%)& 270/280 (96.4\%)& 132/135 (97.8\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 679/1724 (39.4\%)& 277/943 (29.4\%)& 270/620 (43.5\%)& 132/161 (82.0\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 677/708 (95.6\%)& 277/293 (94.5\%)& 269/280 (96.1\%)& 131/135 (97.0\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 677/1724 (39.3\%)& 277/943 (29.4\%)& 269/620 (43.4\%)& 131/161 (81.4\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 677/708 (95.6\%)& 276/293 (94.2\%)& 270/280 (96.4\%)& 131/135 (97.0\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 677/1724 (39.3\%)& 276/943 (29.3\%)& 270/620 (43.5\%)& 131/161 (81.4\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 561/708 (79.2\%)& 217/293 (74.1\%)& 219/280 (78.2\%)& 125/135 (92.6\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 561/1724 (32.5\%)& 217/943 (23.0\%)& 219/620 (35.3\%)& 125/161 (77.6\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 560/708 (79.1\%)& 219/293 (74.7\%)& 216/280 (77.1\%)& 125/135 (92.6\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 560/1724 (32.5\%)& 219/943 (23.2\%)& 216/620 (34.8\%)& 125/161 (77.6\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 550/708 (77.7\%)& 216/293 (73.7\%)& 211/280 (75.4\%)& 123/135 (91.1\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 550/1724 (31.9\%)& 216/943 (22.9\%)& 211/620 (34.0\%)& 123/161 (76.4\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 546/708 (77.1\%)& 213/293 (72.7\%)& 210/280 (75.0\%)& 123/135 (91.1\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 546/1724 (31.7\%)& 213/943 (22.6\%)& 210/620 (33.9\%)& 123/161 (76.4\%) \\
+\hline
+\end{longtable}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 23 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 546/708 (77.1\%)& 213/293 (72.7\%)& 210/280 (75.0\%)& 123/135 (91.1\%) \\
+\hline
+Sidechain & 0/948 (0.0\%)& 0/616 (0.0\%)& 0/308 (0.0\%)& 0/24 (0.0\%) \\
+\hline
+Aromatic & 0/68 (0.0\%)& 0/34 (0.0\%)& 0/32 (0.0\%)& 0/2 (0.0\%) \\
+\hline
+Overall & 546/1724 (31.7\%)& 213/943 (22.6\%)& 210/620 (33.9\%)& 123/161 (76.4\%) \\
+\hline
+\end{longtable}
+
+\section{Statistically unusual chemical shifts}
+There are no chemical shift outliers.\
+\section{RCI}
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_1$\\ \includegraphics{rci_1}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_2$\\ \includegraphics{rci_2}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_3$\\ \includegraphics{rci_3}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_4$\\ \includegraphics{rci_4}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_5$\\ \includegraphics{rci_5}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_6$\\ \includegraphics{rci_6}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_7$\\ \includegraphics{rci_7}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_8$\\ \includegraphics{rci_8}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_9$\\ \includegraphics{rci_9}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_10$\\ \includegraphics{rci_10}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_11$\\ \includegraphics{rci_11}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_12$\\ \includegraphics{rci_12}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_13$\\ \includegraphics{rci_13}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_14$\\ \includegraphics{rci_14}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_15$\\ \includegraphics{rci_15}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_16$\\ \includegraphics{rci_16}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_17$\\ \includegraphics{rci_17}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_18$\\ \includegraphics{rci_18}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_19$\\ \includegraphics{rci_19}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_20$\\ \includegraphics{rci_20}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_21$\\ \includegraphics{rci_21}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_22$\\ \includegraphics{rci_22}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_23$\\ \includegraphics{rci_23}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_24$\\ \includegraphics{rci_24}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_25$\\ \includegraphics{rci_25}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_26$\\ \includegraphics{rci_26}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_27$\\ \includegraphics{rci_27}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_28$\\ \includegraphics{rci_28}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_29$\\ \includegraphics{rci_29}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_30$\\ \includegraphics{rci_30}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_31$\\ \includegraphics{rci_31}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_32$\\ \includegraphics{rci_32}\\
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_33$\\ \includegraphics{rci_33}\\
+
+\section{Order parameter}
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_1$\\ \includegraphics{s2_1}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_2$\\ \includegraphics{s2_2}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_3$\\ \includegraphics{s2_3}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_4$\\ \includegraphics{s2_4}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_5$\\ \includegraphics{s2_5}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_6$\\ \includegraphics{s2_6}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_7$\\ \includegraphics{s2_7}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_8$\\ \includegraphics{s2_8}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_9$\\ \includegraphics{s2_9}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_10$\\ \includegraphics{s2_10}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_11$\\ \includegraphics{s2_11}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_12$\\ \includegraphics{s2_12}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_13$\\ \includegraphics{s2_13}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shif\_list\_14$\\ \includegraphics{s2_14}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_15$\\ \includegraphics{s2_15}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_16$\\ \includegraphics{s2_16}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_17$\\ \includegraphics{s2_17}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_18$\\ \includegraphics{s2_18}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_19$\\ \includegraphics{s2_19}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_20$\\ \includegraphics{s2_20}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_21$\\ \includegraphics{s2_21}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_22$\\ \includegraphics{s2_22}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_23$\\ \includegraphics{s2_23}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_24$\\ \includegraphics{s2_24}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_25$\\ \includegraphics{s2_25}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_26$\\ \includegraphics{s2_26}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_27$\\ \includegraphics{s2_27}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_28$\\ \includegraphics{s2_28}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_29$\\ \includegraphics{s2_29}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_30$\\ \includegraphics{s2_30}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_31$\\ \includegraphics{s2_31}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_32$\\ \includegraphics{s2_32}\\
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_33$\\ \includegraphics{s2_33}\\
+
+\section{Simulated peak positions}
+\includegraphics[width=18cm]{18857_n15.pdf}\\
+
+\section{LACS}
+Place holder for LACS results
+\section{Analysis data}
+place holder for the numerical values and tables.
+\end{document}

@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BMRB Validation Report
+% LaTeX Template
+% Version 1.0 (November 8, 2022)
+%
+% Author: Kumaran Baskaran
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\documentclass[12pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage{mathptmx}
+
+%\usepackage{titling}
+%\usepackage{graphicx}
+%\usepackage{longtable}
+%\graphicspath{{Figures/}{./}}
+%
+%\pretitle{
+%  \begin{center}
+%  \LARGE
+%  \includegraphics{/logo}\\[\bigskipamount]
+%}
+%\posttitle{\end{center}}
+%\title{\LARGE Chemical Shift Validation Report} % Report title
+%
+%\author{}
+%
+%\date{\today} % Date of the report
+%
+%
+%\setlength{\droptitle}{-10em}
+%
+\documentclass[12pt]{article}
+
+\makeatletter
+\def\hyphenatestring#1{\xHyphen@te#1$\unskip}
+\def\xHyphen@te{\@ifnextchar${\@gobble}{\sw@p{\hskip 0pt plus 1pt\xHyphen@te}}}
+\def\sw@p#1#2{#2#1}
+\makeatother
+\usepackage{amsmath,amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{mfirstuc}
+%\usepackage{draftwatermark}
+%\SetWatermarkLightness{ 0.9 }
+%\SetWatermarkText{\today}
+%\SetWatermarkScale{ 3 }
+\usepackage[
+%      dvipdfm,    %put here the correct(!) driver you are using
+      colorlinks=true,    %no frame around URL
+      linkcolor = blue, citecolor = blue, urlcolor = blue, % all links blue
+%      urlcolor=black,    %no colors
+%      menucolor=black,    %no colors
+%      linkcolor=black,    %no colors
+%      pagecolor=black,    %no colors
+%      bookmarks=true,    %tree-like TOC
+%      bookmarksopen=true,    %expanded when starting
+%      hyperfootnotes=false,    %no referencing of footnotes, does not compile
+%      pdfpagemode=UseOutlines    %show the bookmarks when starting the pdf viewer
+]{hyperref}
+
+\usepackage{hyperref}
+
+
+
+\usepackage{graphicx}
+\graphicspath{{Figures/}{./}}
+%\usepackage[strings]{underscore}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{soul}
+\definecolor{darkgreen}{rgb}{0.1,0.6,0.1}
+\definecolor{lightred}{rgb}{1.0,0.7,0.7}
+\definecolor{lightblue}{rgb}{0.7,0.7,1.0}
+\sethlcolor{lightred}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage[margin=2cm]{geometry}
+\usepackage[super, sort]{natbib}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+% \usepackage[Q=yes]{examplep}
+
+\bibpunct{(}{)}{;}{a}{,}{,} % required for natbib
+
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcommand{\rectangle}[1]{\tikz{\filldraw[draw=#1,fill=#1] (0,0)
+rectangle (1.6em,0.6em);}}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+%\usepackage[us,12hr]{datetime}
+\usepackage[en-US]{datetime2}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\setlength{\textheight}{23.8cm}
+\setlength{\footskip}{1cm}
+\lhead{Page \thepage}
+\chead{BMRB validation reprot}
+\rhead{30478}
+\lfoot{}
+\cfoot{ \includegraphics[width=6cm]{/logo}}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+\includegraphics[]{/logo}
+\\
+Chemical Shift Validation Report
+}
+
+
+\date{\DTMsetstyle{en-US}\today ~ -- ~ \DTMcurrenttime ~ EST}
+
+
+
+\begin{document}
+
+\maketitle 
+%This is a chemical shift validation report for a publicly released BMRB entry
+\begin{center}
+	\begin{tabular}{l c p{.8\linewidth}}
+		Entry ID& : & 30478 \\
+		Title& : & NMR solution structure of wild type hFABP1 in the presence of GW7647
+ \\
+		Authors& : & M. J. Scanlon; B. Mohanty; B. C. Doak; R. Patil \\
+		Deposited on& : & 2018-06-11 \\
+		%Released on & : & date \\
+	\end{tabular}
+\end{center}
+\vspace*{\fill}
+The following versions of software and data  were used in the production of this report:
+\begin{center}
+	\begin{tabular}{l c l}
+		PyNMRSTAR& : & 3.3.0 \\
+		RCI& : & 1.1 \\
+		ShiftChecker & : &1.2 \\
+		LACS & : & VARLACSVER \\
+		AVS & : & VARAVSVER\\
+	\end{tabular}
+\end{center}
+
+\newpage
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0pt}
+\section{Summary}
+The biological assembly is a complex.\\
+\subsection{ Entity information}
+\subsubsection{ Entity 1 }
+\begin{longtable}{l l p{0.38\linewidth}}
+Type &:& polymer\\
+Polymer type &:& polypeptide(L)\\
+Name &:& entity\_1\\
+Sequence length &:& 135\\
+Sequence &:& HHHHHHVAMSFSGKYQLQSQ ENFEAFMKAIGLPEELIQKG KDIKGVSEIVQNGKHFKFTI TAGSKVIQNEFTVGEECELE TMTGEKVKTVVQLEGDNKLV TTFKNIKSVTELNGDIITNT MTLGDIVFKRISKRI\\
+\end{longtable}
+\subsubsection{ Entity 2 }
+\begin{longtable}{l l p{0.38\linewidth}}
+Type &:& non-polymer\\
+Polymer type &:& .\\
+Name &:& entity\_2VN\\
+Sequence length &:& 1\\
+Sequence &:& .\\
+\end{longtable}
+
+\subsection{ Chemical shift list information}
+There  is 1 chemical shift list reproted.  The summary of the chemical shift data is given below\\
+\begin{center}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chemical\_shifts\_1\\
+\hline
+Saveframe ID & 1\\
+\hline
+\capitalisewords{ionic strength} & 70 mM\\
+\hline
+\capitalisewords{pH} & 5.5 pH\\
+\hline
+\capitalisewords{pressure} & 1 atm\\
+\hline
+\capitalisewords{temperature} & 308 K\\
+\hline
+Number of shifts & 1526\\
+\hline
+Number of shift outliers & 1\\
+\hline
+Assignment completeness & 81.8\%\\
+\hline
+\end{longtable}
+
+\end{center}
+\section{Completeness}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 19 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 523/684 (76.5\%)& 266/280 (95.0\%)& 130/270 (48.1\%)& 127/134 (94.8\%) \\
+\hline
+Sidechain & 919/1036 (88.7\%)& 626/675 (92.7\%)& 277/330 (83.9\%)& 18/35 (51.4\%) \\
+\hline
+Aromatic & 84/146 (57.5\%)& 42/73 (57.5\%)& 42/59 (71.2\%)& 0/14 (0.0\%) \\
+\hline
+Overall & 1526/1866 (81.8\%)& 934/1028 (90.9\%)& 449/659 (68.1\%)& 145/183 (79.2\%) \\
+\hline
+\end{longtable}
+
+\section{Statistically unusual chemical shifts}
+The following table lists the statistically unusual chemical shifts. These are statistical measures, and large deviations from the mean do not necessarily imply incorrect assignments. Molecules containing paramagnetic centres or hemes are expected to give rise to anomalous chemical shifts\\\begin{longtable}{|l|l|l|l|l|l|l|}
+\hline
+Entity & Seq & Res & Atom & Shift (ppm) & Expected range (ppm) & Z-score\\\hline
+1 & 51 & GLN & HG3 & 0.826 & 0.91 -- 3.68 & -5.31\\
+\hline
+\end{longtable}
+
+\section{RCI}
+RCI plot for the chemical shifts from the  save frame $assigned\_chemical\_shifts\_1$\\ \includegraphics{rci_1}\\
+
+\section{Order parameter}
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chemical\_shifts\_1$\\ \includegraphics{s2_1}\\
+
+\section{LACS}
+Place holder for LACS results
+\section{Analysis data}
+place holder for the numerical values and tables.
+\end{document}

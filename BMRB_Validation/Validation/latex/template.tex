@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BMRB Validation Report
+% LaTeX Template
+% Version 1.0 (November 8, 2022)
+%
+% Author: Kumaran Baskaran
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\documentclass[12pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage{mathptmx}
+
+%\usepackage{titling}
+%\usepackage{graphicx}
+%\usepackage{longtable}
+%\graphicspath{{Figures/}{./}}
+%
+%\pretitle{
+%  \begin{center}
+%  \LARGE
+%  \includegraphics{/logo}\\[\bigskipamount]
+%}
+%\posttitle{\end{center}}
+%\title{\LARGE Chemical Shift Validation Report} % Report title
+%
+%\author{}
+%
+%\date{\today} % Date of the report
+%
+%
+%\setlength{\droptitle}{-10em}
+%
+\documentclass[12pt]{article}
+
+\makeatletter
+\def\hyphenatestring#1{\xHyphen@te#1$\unskip}
+\def\xHyphen@te{\@ifnextchar${\@gobble}{\sw@p{\hskip 0pt plus 1pt\xHyphen@te}}}
+\def\sw@p#1#2{#2#1}
+\makeatother
+\usepackage{amsmath,amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{mfirstuc}
+%\usepackage{draftwatermark}
+%\SetWatermarkLightness{ 0.9 }
+%\SetWatermarkText{\today}
+%\SetWatermarkScale{ 3 }
+\usepackage[
+%      dvipdfm,    %put here the correct(!) driver you are using
+      colorlinks=true,    %no frame around URL
+      linkcolor = blue, citecolor = blue, urlcolor = blue, % all links blue
+%      urlcolor=black,    %no colors
+%      menucolor=black,    %no colors
+%      linkcolor=black,    %no colors
+%      pagecolor=black,    %no colors
+%      bookmarks=true,    %tree-like TOC
+%      bookmarksopen=true,    %expanded when starting
+%      hyperfootnotes=false,    %no referencing of footnotes, does not compile
+%      pdfpagemode=UseOutlines    %show the bookmarks when starting the pdf viewer
+]{hyperref}
+
+\usepackage{hyperref}
+
+
+
+\usepackage{graphicx}
+\graphicspath{{Figures/}{./}}
+%\usepackage[strings]{underscore}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{soul}
+\definecolor{darkgreen}{rgb}{0.1,0.6,0.1}
+\definecolor{lightred}{rgb}{1.0,0.7,0.7}
+\definecolor{lightblue}{rgb}{0.7,0.7,1.0}
+\sethlcolor{lightred}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage[margin=2cm]{geometry}
+\usepackage[super, sort]{natbib}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+% \usepackage[Q=yes]{examplep}
+
+\bibpunct{(}{)}{;}{a}{,}{,} % required for natbib
+
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcommand{\rectangle}[1]{\tikz{\filldraw[draw=#1,fill=#1] (0,0)
+rectangle (1.6em,0.6em);}}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+%\usepackage[us,12hr]{datetime}
+\usepackage[en-US]{datetime2}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\setlength{\textheight}{23.8cm}
+\setlength{\footskip}{1cm}
+\lhead{Page \thepage}
+\chead{BMRB validation reprot}
+\rhead{VARENTRYID}
+\lfoot{}
+\cfoot{ \includegraphics[width=6cm]{/logo}}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+\includegraphics[]{/logo}
+\\
+Chemical Shift Validation Report
+}
+
+
+\date{\DTMsetstyle{en-US}\today ~ -- ~ \DTMcurrenttime ~ EST}
+
+
+
+\begin{document}
+
+\maketitle 
+%This is a chemical shift validation report for a publicly released BMRB entry
+\begin{center}
+	\begin{tabular}{l c p{.8\linewidth}}
+		Entry ID& : & VARENTRYID \\
+		Title& : & VARTITLE \\
+		Authors& : & VARAUTHORS \\
+		Deposited on& : & VARDEPDATE \\
+		%Released on & : & date \\
+	\end{tabular}
+\end{center}
+\vspace*{\fill}
+The following versions of software and data  were used in the production of this report:
+\begin{center}
+	\begin{tabular}{l c l}
+		PyNMRSTAR& : & VARPYNMRSTARVER \\
+		RCI& : & VARRCIVER \\
+		ShiftChecker & : &VARSHIFTCHECKERVER \\
+		%LACS & : & VARLACSVER \\
+		%AVS & : & VARAVSVER\\
+	\end{tabular}
+\end{center}
+
+\newpage
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0pt}
+\section{Summary}
+The biological assembly VAROLIGOMERSTATE
+\subsection{ Entity information}
+VARENTITYTABLE
+\subsection{ Chemical shift list information}
+There  VARISARE VARNOOFCSLIST chemical shift listVARSORP reproted.  The summary of the chemical shift data is given below\\
+\begin{center}
+VARCSSUMMARYTABLE
+\end{center}
+\section{Completeness}
+VARCOMPLETENESSTABLE
+\section{Statistically unusual chemical shifts}
+VAROUTLIERSTABLE \\
+Note: Statistically unusual chemical shifts are determined using the BMRB chemical shift statistics. These chemical shifts are those that deviate from the mean value of the BMRB chemical shift distribution by more than five standard deviations, falling on either side of the mean.
+L- amino acid distributions are used to calcualte D- amino acid outliers
+\section{RCI}
+VARRCIPLOTS
+Note: D-amino acids are treated as L-amino acids to calcualte the RCI values.
+\section{Order parameter}
+VARS2PLOTS
+Note: D-amino acids are treated as L-amino acids to calcualte the order parameter.
+% \section{Simulated peak positions}
+% VARN15PLOT
+% \section{LACS}
+% Place holder for LACS results
+% \section{Analysis data}
+% place holder for the numerical values and tables.
+\end{document}

@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BMRB Validation Report
+% LaTeX Template
+% Version 1.0 (November 8, 2022)
+%
+% Author: Kumaran Baskaran
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt]{article}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{longtable}
+\graphicspath{{Figures/}{./}}
+
+\pretitle{
+  \begin{center}
+  \LARGE
+  \includegraphics{/logo}\\[\bigskipamount]
+}
+\posttitle{\end{center}}
+\title{\LARGE Chemical Shift Validation Report} % Report title
+
+\author{}
+
+\date{\today} % Date of the report
+
+
+\setlength{\droptitle}{-10em} 
+
+\begin{document}
+
+\maketitle 
+%This is a chemical shift validation report for a publicly released BMRB entry
+\begin{center}
+	\begin{tabular}{l c p{.8\linewidth}}
+		Entry ID& : & 15060 \\
+		Title& : & NMR structure of the murine DLC2 (deleted in liver cancer -2) SAM (sterile alpha motif) domain
+ \\
+		Authors& : & Logan W. Donaldson \\
+		Deposited on& : & 2006-11-30 \\
+		%Released on & : & date \\
+	\end{tabular}
+\end{center}
+\vspace*{\fill}
+The following versions of software and data  were used in the production of this report:
+\begin{center}
+	\begin{tabular}{l c l}
+		PyNMRSTAR& : & 3.3.0 \\
+		RCI& : & 1.1 \\
+		ShiftChecker & : &1.2 \\
+		LACS & : & VARLACSVER \\
+		AVS & : & VARAVSVER\\
+	\end{tabular}
+\end{center}
+\newpage
+
+\section{Summary}
+The entry contains 1 chemical shift saveframe. The summary of the chemical shift data is given below\\
+\begin{center}
+\begin{longtable}{|l|l|l|l|l|l|l|}
+\hline
+Saveframe name & ID & No. of shifts&ionic strength&pressure&pH&temperature\\
+\hline
+assigned\_chem\_shift\_list\_1 & 1 & 974&0.15&1&7.8&295\\
+\hline
+\end{longtable}
+
+\end{center}
+\section{Completeness}
+\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 401/532 (75.4\%)& 168/215 (78.1\%)& 150/214 (70.1\%)& 83/103 (80.6\%) \\
+\hline
+Sidechain & 545/808 (67.5\%)& 367/532 (69.0\%)& 168/252 (66.7\%)& 10/38 (26.3\%) \\
+\hline
+Aromatic & 28/124 (22.6\%)& 24/63 (38.1\%)& 3/47 (6.4\%)& 1/15 (6.7\%) \\
+\hline
+Overall & 974/1464 (66.5\%)& 559/810 (69.0\%)& 321/513 (62.6\%)& 94/156 (60.3\%) \\
+\hline
+\end{longtable}
+
+\section{Outliers}
+There are no chemical shift outliers.\
+\section{RCI}
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_1$\\ \includegraphics{rci_1}\\
+
+\section{Order parameter}
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_1$\\ \includegraphics{s2_1}\\
+
+\section{LACS}
+Place holder for LACS results
+\section{Analysis data}
+place holder for the numerical values and tables.
+\end{document}

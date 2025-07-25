@@ -1,0 +1,226 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BMRB Validation Report
+% LaTeX Template
+% Version 1.0 (November 8, 2022)
+%
+% Author: Kumaran Baskaran
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\documentclass[12pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage{mathptmx}
+
+%\usepackage{titling}
+%\usepackage{graphicx}
+%\usepackage{longtable}
+%\graphicspath{{Figures/}{./}}
+%
+%\pretitle{
+%  \begin{center}
+%  \LARGE
+%  \includegraphics{/logo}\\[\bigskipamount]
+%}
+%\posttitle{\end{center}}
+%\title{\LARGE Chemical Shift Validation Report} % Report title
+%
+%\author{}
+%
+%\date{\today} % Date of the report
+%
+%
+%\setlength{\droptitle}{-10em}
+%
+\documentclass[12pt]{article}
+
+\makeatletter
+\def\hyphenatestring#1{\xHyphen@te#1$\unskip}
+\def\xHyphen@te{\@ifnextchar${\@gobble}{\sw@p{\hskip 0pt plus 1pt\xHyphen@te}}}
+\def\sw@p#1#2{#2#1}
+\makeatother
+\usepackage{amsmath,amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{mfirstuc}
+%\usepackage{draftwatermark}
+%\SetWatermarkLightness{ 0.9 }
+%\SetWatermarkText{\today}
+%\SetWatermarkScale{ 3 }
+\usepackage[
+%      dvipdfm,    %put here the correct(!) driver you are using
+      colorlinks=true,    %no frame around URL
+      linkcolor = blue, citecolor = blue, urlcolor = blue, % all links blue
+%      urlcolor=black,    %no colors
+%      menucolor=black,    %no colors
+%      linkcolor=black,    %no colors
+%      pagecolor=black,    %no colors
+%      bookmarks=true,    %tree-like TOC
+%      bookmarksopen=true,    %expanded when starting
+%      hyperfootnotes=false,    %no referencing of footnotes, does not compile
+%      pdfpagemode=UseOutlines    %show the bookmarks when starting the pdf viewer
+]{hyperref}
+
+\usepackage{hyperref}
+
+
+
+\usepackage{graphicx}
+\graphicspath{{Figures/}{./}}
+%\usepackage[strings]{underscore}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{soul}
+\definecolor{darkgreen}{rgb}{0.1,0.6,0.1}
+\definecolor{lightred}{rgb}{1.0,0.7,0.7}
+\definecolor{lightblue}{rgb}{0.7,0.7,1.0}
+\sethlcolor{lightred}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage[margin=2cm]{geometry}
+\usepackage[super, sort]{natbib}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+% \usepackage[Q=yes]{examplep}
+
+\bibpunct{(}{)}{;}{a}{,}{,} % required for natbib
+
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcommand{\rectangle}[1]{\tikz{\filldraw[draw=#1,fill=#1] (0,0)
+rectangle (1.6em,0.6em);}}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+%\usepackage[us,12hr]{datetime}
+\usepackage[en-US]{datetime2}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\setlength{\textheight}{23.8cm}
+\setlength{\footskip}{1cm}
+\lhead{Page \thepage}
+\chead{BMRB validation reprot}
+\rhead{51294}
+\lfoot{}
+\cfoot{ \includegraphics[width=6cm]{/logo}}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+\includegraphics[]{/logo}
+\\
+Chemical Shift Validation Report
+}
+
+
+\date{\DTMsetstyle{en-US}\today ~ -- ~ \DTMcurrenttime ~ EST}
+
+
+
+\begin{document}
+
+\maketitle 
+%This is a chemical shift validation report for a publicly released BMRB entry
+\begin{center}
+	\begin{tabular}{l c p{.8\linewidth}}
+		Entry ID& : & 51294 \\
+		Title& : & Backbone assignment of Hepatitis B virus core protein Cp149 dimer by solution NMR at pH 7.5
+ \\
+		Authors& : & Lauriane Lecoq; Mathilde Briday; Anja Bockmann \\
+		Deposited on& : & 2022-01-27 \\
+		%Released on & : & date \\
+	\end{tabular}
+\end{center}
+\vspace*{\fill}
+The following versions of software and data  were used in the production of this report:
+\begin{center}
+	\begin{tabular}{l c l}
+		PyNMRSTAR& : & 3.3.0 \\
+		RCI& : & 1.1 \\
+		ShiftChecker & : &1.2 \\
+		LACS & : & VARLACSVER \\
+		AVS & : & VARAVSVER\\
+	\end{tabular}
+\end{center}
+
+\newpage
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0pt}
+\section{Summary}
+The biological assembly is an oligomer with 2 chains made by one Entity.\\
+\subsection{ Entity information}
+\subsubsection{ Entity 1 }
+\begin{longtable}{l l l}
+Type &:& polymer\\
+Polymer type &:& polypeptide(L)\\
+Name &:& entity\_1\\
+Sequence length &:& 149\\
+Sequence &:& \multicolumn{1}{p{0.25\linewidth}}{\texttt{MDIDPYKEFGATVELLSFLP SDFFPSVRDLLDTASALYRE ALESPEHCSPHHTALRQAIL CWGELMTLATWVGVNLEDPA SRDLVVSYVNTNMGLKFRQL LWFHISCLTFGRETVIEYLV SFGVWIRTPPAYRPPNAPIL STLPETTVV}}\\
+\end{longtable}
+
+\subsection{ Chemical shift list information}
+There  is 1 chemical shift list reproted.  The summary of the chemical shift data is given below\\
+\begin{center}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chemical\_shifts\_1\\
+\hline
+Saveframe ID & 1\\
+\hline
+\capitalisewords{ionic strength} & 0 M\\
+\hline
+\capitalisewords{pH} & 7.5 pH\\
+\hline
+\capitalisewords{pressure} & 1 atm\\
+\hline
+\capitalisewords{temperature} & 295 K\\
+\hline
+Number of shifts & 382\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 18.5\%\\
+\hline
+\end{longtable}
+
+\end{center}
+\section{Completeness}
+Completeness information for Entity 1. It is a polypeptide(L) polymer. 0 out of 32 methyl groups (LEU and VAL) were assigned stereospecifically.\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 378/727 (52.0\%)& 98/292 (33.6\%)& 182/298 (61.1\%)& 98/137 (71.5\%) \\
+\hline
+Sidechain & 0/1129 (0.0\%)& 0/761 (0.0\%)& 0/352 (0.0\%)& 0/32 (0.0\%) \\
+\hline
+Aromatic & 4/210 (1.9\%)& 2/109 (1.8\%)& 0/93 (0.0\%)& 2/12 (16.7\%) \\
+\hline
+Overall & 382/2066 (18.5\%)& 100/1162 (8.6\%)& 182/743 (24.5\%)& 100/181 (55.2\%) \\
+\hline
+\end{longtable}
+
+\section{Statistically unusual chemical shifts}
+There are no chemical shift outliers.\
+\section{RCI}
+RCI plot for the chemical shifts from the  save frame $assigned\_chemical\_shifts\_1$\\ \includegraphics{rci_1}\\
+
+\section{Order parameter}
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chemical\_shifts\_1$\\ \includegraphics{s2_1}\\
+
+\section{Simulated peak positions}
+\includegraphics[width=18cm]{51294_n15.pdf}\\
+
+\section{LACS}
+Place holder for LACS results
+\section{Analysis data}
+place holder for the numerical values and tables.
+\end{document}

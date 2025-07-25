@@ -1,0 +1,415 @@
+data_LACS
+
+         #################################
+         #    LACS Output Information    #
+         #################################
+
+############################################################
+#              LACS Designator Definition                  #
+#                                                          #
+#   Index Value                    Definition              #
+#                                                          #
+#        0                          Outliers               #
+#        1                        Normal points            #
+#                                                          # 
+############################################################            
+
+
+
+save_LACS_CACB_CA_output
+    _LACS_plot.Sf_category                LACS_output 
+    _LACS.plot.Input_file_name            bmr15060_21.str 
+    _LACS_plot.X_coord_name               CA-CB 
+    _LACS_plot.Y_coord_name               CA 
+    _LACS_plot.Line_1_terminator_val_x_1  -4.63 
+    _LACS_plot.Line_1_terminator_val_y_1  -2.04 
+    _LACS_plot.Line_1_terminator_val_x_2  2.00 
+    _LACS_plot.Line_1_terminator_val_y_2  1.07 
+    _LACS_plot.Line_2_terminator_val_x_1  -2.00 
+    _LACS_plot.Line_2_terminator_val_y_1  -1.49 
+    _LACS_plot.Line_2_terminator_val_x_2  6.72 
+    _LACS_plot.Line_2_terminator_val_y_2  5.14 
+    _LACS_plot.Y_axis_chem_shift_offset   -0.08 
+
+    loop_
+        _LACS.Comp_index_ID 
+        _LACS.Comp_ID 
+        _LACS.X_coord_val 
+        _LACS.Y_coord_val 
+        _LACS.Designator 
+
+         56 ILE -4.63 -2.19 0 
+         44 GLN  5.68  2.36 0 
+         20 LEU  1.14  0.92 1 
+         21 VAL  1.87  1.21 1 
+         22 THR  1.22  1.35 1 
+         23 LYS  2.77  2.25 1 
+         24 ILE  3.15  2.47 1 
+         25 GLN  3.95  2.65 1 
+         26 GLN  3.88  2.98 1 
+         27 GLU  3.21  2.60 1 
+         28 ILE  4.85  4.01 1 
+         29 GLU  3.52  2.91 1 
+         30 ALA  2.86  2.19 1 
+         31 LYS  4.26  3.31 1 
+         32 GLU  4.33  3.37 1 
+         33 ALA  4.38  2.97 1 
+         35 ASP  4.54  3.34 1 
+         36 TRP  5.67  5.55 1 
+         37 LEU  4.61  3.58 1 
+         38 ARG  5.69  5.16 1 
+         39 ALA  3.00  2.01 1 
+         40 ALA  0.43 -0.57 1 
+         42 PHE -2.11 -0.80 1 
+         45 TYR  2.43  2.87 1 
+         46 ALA  3.01  2.41 1 
+         47 GLN  3.99  2.77 1 
+         48 LEU  1.97  3.20 1 
+         49 TYR  5.65  4.39 1 
+         50 GLU  3.74  2.63 1 
+         51 ASP  0.57  0.12 1 
+         52 SER  3.41  1.30 1 
+         53 GLN -0.76 -0.96 1 
+         54 PHE  1.52  1.83 1 
+         57 ASN  0.27 -0.60 1 
+         58 ILE  5.27  3.47 1 
+         59 ALA  4.63  2.95 1 
+         60 ALA  3.00  2.10 1 
+         61 VAL  5.46  3.89 1 
+         62 LYS  4.91  4.24 1 
+         63 LYS  3.16  2.14 1 
+         64 ASP  2.39  1.89 1 
+         65 HIS  1.25  1.06 1 
+         66 ASP  2.68  2.13 1 
+         67 PHE -0.17 -1.09 1 
+         68 LEU -1.41 -0.36 1 
+         69 GLU  0.11  0.05 1 
+         70 ARG  4.25  3.54 1 
+         71 ASP  2.85  1.84 1 
+         72 LEU -0.91  0.32 1 
+         73 VAL  5.66  4.78 1 
+         74 GLU  4.02  3.52 1 
+         76 LEU  4.84  3.84 1 
+         78 ARG  5.20  4.02 1 
+         79 ARG  4.44  2.94 1 
+         80 LEU  4.28  3.93 1 
+         81 ASN  6.72  5.60 1 
+         82 THR  3.97  2.66 1 
+         83 LEU  5.43  3.41 1 
+         84 ASN  5.22  3.62 1 
+         85 LYS  1.79  2.04 1 
+         87 ALA  2.80  2.56 1 
+         88 SER  2.42  1.54 1 
+         89 MET  1.36  0.71 1 
+         90 ARG  0.18  0.21 1 
+         91 LEU  0.25  0.41 1 
+         92 ASP  1.83  0.94 1 
+         93 VAL  0.68  0.50 1 
+         94 ASN  0.99  0.68 1 
+         95 PHE  0.18  0.07 1 
+         96 GLN  0.22  0.09 1 
+         97 ARG -0.17 -0.22 1 
+         98 LYS  0.45  0.35 1 
+         99 LYS  0.13  0.29 1 
+        101 ASP  0.43  0.37 1 
+        102 ASP -0.31  0.17 1 
+        103 SER  0.22  0.37 1 
+        104 ASP -0.54 -0.08 1 
+        105 GLU -0.94 -0.20 1 
+        106 GLU  0.91  2.01 1 
+    stop_
+
+save_
+
+
+save_LACS_CACB_CB_output
+    _LACS_plot.Sf_category                LACS_output 
+    _LACS.plot.Input_file_name            bmr15060_21.str 
+    _LACS_plot.X_coord_name               CA-CB 
+    _LACS_plot.Y_coord_name               CB 
+    _LACS_plot.Line_1_terminator_val_x_1  -4.63 
+    _LACS_plot.Line_1_terminator_val_y_1  2.59 
+    _LACS_plot.Line_1_terminator_val_x_2  2.00 
+    _LACS_plot.Line_1_terminator_val_y_2  -0.93 
+    _LACS_plot.Line_2_terminator_val_x_1  -2.00 
+    _LACS_plot.Line_2_terminator_val_y_1  0.51 
+    _LACS_plot.Line_2_terminator_val_x_2  6.72 
+    _LACS_plot.Line_2_terminator_val_y_2  -1.58 
+    _LACS_plot.Y_axis_chem_shift_offset   -0.08 
+
+    loop_
+        _LACS.Comp_index_ID 
+        _LACS.Comp_ID 
+        _LACS.X_coord_val 
+        _LACS.Y_coord_val 
+        _LACS.Designator 
+
+         56 ILE -4.63  2.44 0 
+         44 GLN  5.68 -3.32 0 
+         20 LEU  1.14 -0.22 1 
+         21 VAL  1.87 -0.66 1 
+         22 THR  1.22  0.13 1 
+         23 LYS  2.77 -0.52 1 
+         24 ILE  3.15 -0.68 1 
+         25 GLN  3.95 -1.30 1 
+         26 GLN  3.88 -0.90 1 
+         27 GLU  3.21 -0.61 1 
+         28 ILE  4.85 -0.84 1 
+         29 GLU  3.52 -0.61 1 
+         30 ALA  2.86 -0.67 1 
+         31 LYS  4.26 -0.95 1 
+         32 GLU  4.33 -0.96 1 
+         33 ALA  4.38 -1.41 1 
+         35 ASP  4.54 -1.20 1 
+         36 TRP  5.67 -0.12 1 
+         37 LEU  4.61 -1.03 1 
+         38 ARG  5.69 -0.53 1 
+         39 ALA  3.00 -0.99 1 
+         40 ALA  0.43 -1.00 1 
+         42 PHE -2.11  1.31 1 
+         45 TYR  2.43  0.44 1 
+         46 ALA  3.01 -0.60 1 
+         47 GLN  3.99 -1.22 1 
+         48 LEU  1.97  1.23 1 
+         49 TYR  5.65 -1.26 1 
+         50 GLU  3.74 -1.11 1 
+         51 ASP  0.57 -0.45 1 
+         52 SER  3.41 -2.11 1 
+         53 GLN -0.76 -0.20 1 
+         54 PHE  1.52  0.31 1 
+         57 ASN  0.27 -0.87 1 
+         58 ILE  5.27 -1.80 1 
+         59 ALA  4.63 -1.68 1 
+         60 ALA  3.00 -0.90 1 
+         61 VAL  5.46 -1.57 1 
+         62 LYS  4.91 -0.67 1 
+         63 LYS  3.16 -1.02 1 
+         64 ASP  2.39 -0.50 1 
+         65 HIS  1.25 -0.19 1 
+         66 ASP  2.68 -0.55 1 
+         67 PHE -0.17 -0.92 1 
+         68 LEU -1.41  1.05 1 
+         69 GLU  0.11 -0.06 1 
+         70 ARG  4.25 -0.71 1 
+         71 ASP  2.85 -1.01 1 
+         72 LEU -0.91  1.23 1 
+         73 VAL  5.66 -0.88 1 
+         74 GLU  4.02 -0.50 1 
+         76 LEU  4.84 -1.00 1 
+         78 ARG  5.20 -1.18 1 
+         79 ARG  4.44 -1.50 1 
+         80 LEU  4.28 -0.35 1 
+         81 ASN  6.72 -1.12 1 
+         82 THR  3.97 -1.31 1 
+         83 LEU  5.43 -2.02 1 
+         84 ASN  5.22 -1.60 1 
+         85 LYS  1.79  0.25 1 
+         87 ALA  2.80 -0.24 1 
+         88 SER  2.42 -0.88 1 
+         89 MET  1.36 -0.65 1 
+         90 ARG  0.18  0.03 1 
+         91 LEU  0.25  0.16 1 
+         92 ASP  1.83 -0.89 1 
+         93 VAL  0.68 -0.18 1 
+         94 ASN  0.99 -0.31 1 
+         95 PHE  0.18 -0.11 1 
+         96 GLN  0.22 -0.13 1 
+         97 ARG -0.17 -0.05 1 
+         98 LYS  0.45 -0.10 1 
+         99 LYS  0.13  0.16 1 
+        101 ASP  0.43 -0.06 1 
+        102 ASP -0.31  0.48 1 
+        103 SER  0.22  0.15 1 
+        104 ASP -0.54  0.46 1 
+        105 GLU -0.94  0.74 1 
+        106 GLU  0.91  1.10 1 
+    stop_
+
+save_
+
+
+save_LACS_CACB_HA_output
+    _LACS_plot.Sf_category                LACS_output 
+    _LACS.plot.Input_file_name            bmr15060_21.str 
+    _LACS_plot.X_coord_name               CA-CB 
+    _LACS_plot.Y_coord_name               HA 
+    _LACS_plot.Line_1_terminator_val_x_1  -4.63 
+    _LACS_plot.Line_1_terminator_val_y_1  0.33 
+    _LACS_plot.Line_1_terminator_val_x_2  2.00 
+    _LACS_plot.Line_1_terminator_val_y_2  -0.15 
+    _LACS_plot.Line_2_terminator_val_x_1  -2.00 
+    _LACS_plot.Line_2_terminator_val_y_1  0.14 
+    _LACS_plot.Line_2_terminator_val_x_2  6.72 
+    _LACS_plot.Line_2_terminator_val_y_2  -0.48 
+    _LACS_plot.Y_axis_chem_shift_offset   0.00 
+
+    loop_
+        _LACS.Comp_index_ID 
+        _LACS.Comp_ID 
+        _LACS.X_coord_val 
+        _LACS.Y_coord_val 
+        _LACS.Designator 
+
+         48 LEU  1.97  0.42 0 
+         56 ILE -4.63  0.31 0 
+         58 ILE  5.27  0.19 0 
+         22 THR  1.22 -0.04 1 
+         23 LYS  2.77 -0.16 1 
+         24 ILE  3.15 -0.22 1 
+         25 GLN  3.95 -0.28 1 
+         26 GLN  3.88 -0.23 1 
+         27 GLU  3.21 -0.25 1 
+         28 ILE  4.85 -0.17 1 
+         29 GLU  3.52 -0.33 1 
+         30 ALA  2.86 -0.48 1 
+         31 LYS  4.26 -0.31 1 
+         32 GLU  4.33 -0.27 1 
+         33 ALA  4.38 -0.48 1 
+         35 ASP  4.54 -0.27 1 
+         36 TRP  5.67 -0.65 1 
+         37 LEU  4.61 -0.29 1 
+         38 ARG  5.69 -0.70 1 
+         39 ALA  3.00 -0.29 1 
+         40 ALA  0.43 -0.39 1 
+         42 PHE -2.11  0.33 1 
+         44 GLN  5.68 -0.06 1 
+         45 TYR  2.43  0.24 1 
+         46 ALA  3.01 -0.01 1 
+         47 GLN  3.99 -0.43 1 
+         49 TYR  5.65 -0.63 1 
+         50 GLU  3.74 -0.49 1 
+         51 ASP  0.57  0.21 1 
+         52 SER  3.41 -0.09 1 
+         53 GLN -0.76  0.19 1 
+         54 PHE  1.52 -0.56 1 
+         57 ASN  0.27 -0.08 1 
+         59 ALA  4.63 -0.35 1 
+         60 ALA  3.00 -0.24 1 
+         61 VAL  5.46 -0.33 1 
+         62 LYS  4.91 -0.68 1 
+         63 LYS  3.16 -0.19 1 
+         64 ASP  2.39 -0.12 1 
+         65 HIS  1.25 -0.11 1 
+         66 ASP  2.68 -0.24 1 
+         67 PHE -0.17  0.04 1 
+         68 LEU -1.41  0.03 1 
+         69 GLU  0.11 -0.02 1 
+         70 ARG  4.25 -0.30 1 
+         71 ASP  2.85 -0.11 1 
+         72 LEU -0.91  0.43 1 
+         73 VAL  5.66 -0.57 1 
+         74 GLU  4.02 -0.29 1 
+         76 LEU  4.84 -0.32 1 
+         78 ARG  5.20 -0.04 1 
+         79 ARG  4.44 -0.26 1 
+         80 LEU  4.28 -0.30 1 
+         81 ASN  6.72 -0.48 1 
+         82 THR  3.97 -0.67 1 
+         83 LEU  5.43  0.00 1 
+         84 ASN  5.22 -0.20 1 
+         85 LYS  1.79 -0.01 1 
+         87 ALA  2.80 -0.14 1 
+         88 SER  2.42 -0.17 1 
+         89 MET  1.36 -0.09 1 
+         90 ARG  0.18  0.01 1 
+         91 LEU  0.25 -0.02 1 
+         92 ASP  1.83 -0.07 1 
+         93 VAL  0.68 -0.05 1 
+         94 ASN  0.99 -0.12 1 
+         95 PHE  0.18 -0.10 1 
+         96 GLN  0.22 -0.08 1 
+         97 ARG -0.17 -0.02 1 
+         98 LYS  0.13 -0.01 1 
+        101 ASP  0.43 -0.03 1 
+        102 ASP -0.31 -0.05 1 
+        103 SER  0.22  0.00 1 
+        104 ASP -0.54 -0.08 1 
+        105 GLU -0.94 -0.05 1 
+    stop_
+
+save_
+
+
+save_LACS_CACB_CO_output
+    _LACS_plot.Sf_category                LACS_output 
+    _LACS.plot.Input_file_name            bmr15060_21.str 
+    _LACS_plot.X_coord_name               CA-CB 
+    _LACS_plot.Y_coord_name               CO 
+    _LACS_plot.Line_1_terminator_val_x_1  -1.41 
+    _LACS_plot.Line_1_terminator_val_y_1  -0.89 
+    _LACS_plot.Line_1_terminator_val_x_2  2.00 
+    _LACS_plot.Line_1_terminator_val_y_2  0.77 
+    _LACS_plot.Line_2_terminator_val_x_1  -2.00 
+    _LACS_plot.Line_2_terminator_val_y_1  -1.17 
+    _LACS_plot.Line_2_terminator_val_x_2  5.68 
+    _LACS_plot.Line_2_terminator_val_y_2  2.57 
+    _LACS_plot.Y_axis_chem_shift_offset   0.20 
+
+    loop_
+        _LACS.Comp_index_ID 
+        _LACS.Comp_ID 
+        _LACS.X_coord_val 
+        _LACS.Y_coord_val 
+        _LACS.Designator 
+
+         49 TYR  5.65  4.37 0 
+         73 VAL  5.66  0.68 0 
+         25 GLN  3.95  2.19 1 
+         26 GLN  3.88  1.82 1 
+         27 GLU  3.21  3.09 1 
+         28 ILE  4.85  2.07 1 
+         29 GLU  3.52  3.36 1 
+         30 ALA  2.86  1.64 1 
+         33 ALA  4.38  1.92 1 
+         39 ALA  3.00  1.11 1 
+         40 ALA  0.43 -1.28 1 
+         44 GLN  5.68  1.99 1 
+         45 TYR  2.43  0.97 1 
+         46 ALA  3.01  0.94 1 
+         47 GLN  3.99  1.79 1 
+         50 GLU  3.74  0.88 1 
+         51 ASP  0.57 -0.64 1 
+         52 SER  3.41  0.72 1 
+         53 GLN -0.76 -0.29 1 
+         57 ASN  0.27  0.40 1 
+         59 ALA  4.63  2.80 1 
+         60 ALA  3.00  1.81 1 
+         61 VAL  5.46  2.42 1 
+         62 LYS  4.91  2.18 1 
+         63 LYS  3.16  1.62 1 
+         64 ASP  2.39  0.53 1 
+         65 HIS  1.25  1.16 1 
+         66 ASP  2.68 -0.12 1 
+         67 PHE -0.17  0.17 1 
+         68 LEU -1.41 -0.67 1 
+         69 GLU  0.11  1.41 1 
+         70 ARG  4.25  1.47 1 
+         71 ASP  2.85  0.05 1 
+         76 LEU  4.02  0.52 1 
+         78 ARG  4.84  2.43 1 
+         80 LEU  4.44  0.87 1 
+         81 ASN  4.28  3.03 1 
+         83 LEU  3.97  1.30 1 
+         84 ASN  5.43  3.55 1 
+         85 LYS  5.22  3.12 1 
+         87 ALA  1.79  1.77 1 
+         88 SER  2.80  0.75 1 
+         90 ARG  1.36  0.20 1 
+         92 ASP  0.25  0.51 1 
+         93 VAL  1.83 -0.15 1 
+         94 ASN  0.68  0.02 1 
+         95 PHE  0.99 -0.23 1 
+         96 GLN  0.18 -0.53 1 
+         97 ARG  0.22 -0.10 1 
+         98 LYS -0.17 -0.11 1 
+        102 ASP  0.43 -0.02 1 
+        103 SER -0.31 -0.22 1 
+        104 ASP  0.22 -0.11 1 
+        105 GLU -0.54 -0.29 1 
+        106 GLU -0.94 -1.21 1 
+    stop_
+
+save_
+
+
+

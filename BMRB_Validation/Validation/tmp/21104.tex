@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BMRB Validation Report
+% LaTeX Template
+% Version 1.0 (November 8, 2022)
+%
+% Author: Kumaran Baskaran
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\documentclass[12pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage{mathptmx}
+
+%\usepackage{titling}
+%\usepackage{graphicx}
+%\usepackage{longtable}
+%\graphicspath{{Figures/}{./}}
+%
+%\pretitle{
+%  \begin{center}
+%  \LARGE
+%  \includegraphics{/logo}\\[\bigskipamount]
+%}
+%\posttitle{\end{center}}
+%\title{\LARGE Chemical Shift Validation Report} % Report title
+%
+%\author{}
+%
+%\date{\today} % Date of the report
+%
+%
+%\setlength{\droptitle}{-10em}
+%
+\documentclass[12pt]{article}
+
+\makeatletter
+\def\hyphenatestring#1{\xHyphen@te#1$\unskip}
+\def\xHyphen@te{\@ifnextchar${\@gobble}{\sw@p{\hskip 0pt plus 1pt\xHyphen@te}}}
+\def\sw@p#1#2{#2#1}
+\makeatother
+\usepackage{amsmath,amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{mfirstuc}
+%\usepackage{draftwatermark}
+%\SetWatermarkLightness{ 0.9 }
+%\SetWatermarkText{\today}
+%\SetWatermarkScale{ 3 }
+\usepackage[
+%      dvipdfm,    %put here the correct(!) driver you are using
+      colorlinks=true,    %no frame around URL
+      linkcolor = blue, citecolor = blue, urlcolor = blue, % all links blue
+%      urlcolor=black,    %no colors
+%      menucolor=black,    %no colors
+%      linkcolor=black,    %no colors
+%      pagecolor=black,    %no colors
+%      bookmarks=true,    %tree-like TOC
+%      bookmarksopen=true,    %expanded when starting
+%      hyperfootnotes=false,    %no referencing of footnotes, does not compile
+%      pdfpagemode=UseOutlines    %show the bookmarks when starting the pdf viewer
+]{hyperref}
+
+\usepackage{hyperref}
+
+
+
+\usepackage{graphicx}
+\graphicspath{{Figures/}{./}}
+%\usepackage[strings]{underscore}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{soul}
+\definecolor{darkgreen}{rgb}{0.1,0.6,0.1}
+\definecolor{lightred}{rgb}{1.0,0.7,0.7}
+\definecolor{lightblue}{rgb}{0.7,0.7,1.0}
+\sethlcolor{lightred}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage[margin=2cm]{geometry}
+\usepackage[super, sort]{natbib}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+% \usepackage[Q=yes]{examplep}
+
+\bibpunct{(}{)}{;}{a}{,}{,} % required for natbib
+
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcommand{\rectangle}[1]{\tikz{\filldraw[draw=#1,fill=#1] (0,0)
+rectangle (1.6em,0.6em);}}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+%\usepackage[us,12hr]{datetime}
+\usepackage[en-US]{datetime2}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\setlength{\textheight}{23.8cm}
+\setlength{\footskip}{1cm}
+\lhead{Page \thepage}
+\chead{BMRB validation reprot}
+\rhead{21104}
+\lfoot{}
+\cfoot{ \includegraphics[width=6cm]{/logo}}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+\includegraphics[]{/logo}
+\\
+Chemical Shift Validation Report
+}
+
+
+\date{\DTMsetstyle{en-US}\today ~ -- ~ \DTMcurrenttime ~ EST}
+
+
+
+\begin{document}
+
+\maketitle 
+%This is a chemical shift validation report for a publicly released BMRB entry
+\begin{center}
+	\begin{tabular}{l c p{.8\linewidth}}
+		Entry ID& : & 21104 \\
+		Title& : & Solution structure of 11 mer d-form peptide \\
+		Authors& : & Jin Kyeong ? Lee; Yangmee ? Kim \\
+		Deposited on& : & 2025-05-20 \\
+		%Released on & : & date \\
+	\end{tabular}
+\end{center}
+\vspace*{\fill}
+The following versions of software and data  were used in the production of this report:
+\begin{center}
+	\begin{tabular}{l c l}
+		PyNMRSTAR& : & 3.3.0 \\
+		RCI& : & 1.1 \\
+		ShiftChecker & : &1.2 \\
+		%LACS & : & VARLACSVER \\
+		%AVS & : & VARAVSVER\\
+	\end{tabular}
+\end{center}
+
+\newpage
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0pt}
+\section{Summary}
+The biological assembly is a monomer with one Entity.\\
+\subsection{ Entity information}
+\subsubsection{ Entity 1 }
+\begin{longtable}{l l l}
+Type &:& polymer\\
+Polymer type &:& polypeptide(D)\\
+Name &:& entity\\
+Sequence length &:& 12\\
+Sequence &:& \multicolumn{1}{p{0.25\linewidth}}{\texttt{(DLY)(DTR)(DAR)(DVA) (DLY)(DLE)(DAR)(DAL) (DTY)(DLE)(DAR)(NH2) }}\\
+\end{longtable}
+
+\subsection{ Chemical shift list information}
+There  is 1 chemical shift list reproted.  The summary of the chemical shift data is given below\\
+\begin{center}
+\begin{longtable}{|l|l|}
+\hline
+Saveframe name & assigned\_chem\_shift\_list\_1\\
+\hline
+Saveframe ID & 1\\
+\hline
+\capitalisewords{pH} & 5.9 .\\
+\hline
+\capitalisewords{temperature} & 303 .\\
+\hline
+Number of shifts & 96\\
+\hline
+Number of shift outliers & 0\\
+\hline
+Assignment completeness & 49.3\%\\
+\hline
+\end{longtable}
+
+\end{center}
+\section{Completeness}
+Completeness information for Entity 1. It is a polypeptide(D) polymer\\
+\begin{longtable}{|l|l|l|l|l|}
+\hline
+  & Total & $^{1}H$ & $^{13}C$ & $^{15}N$\\\hline
+Backbone & 31/55 (56.4\%)& 20/22 (90.9\%)& 11/22 (50.0\%)& 0/11 (0.0\%) \\
+\hline
+Sidechain & 58/126 (46.0\%)& 58/87 (66.7\%)& 0/34 (0.0\%)& 0/11 (0.0\%) \\
+\hline
+Aromatic & 7/22 (31.8\%)& 7/12 (58.3\%)& 0/10 (0.0\%)& 0/1 (0.0\%) \\
+\hline
+Overall & 100/203 (49.3\%)& 85/121 (70.2\%)& 11/66 (16.7\%)& 0/23 (0.0\%) \\
+\hline
+\end{longtable}
+
+\section{Statistically unusual chemical shifts}
+There are no chemical shift outliers.\ \\
+Note: Statistically unusual chemical shifts are determined using the BMRB chemical shift statistics. These chemical shifts are those that deviate from the mean value of the BMRB chemical shift distribution by more than five standard deviations, falling on either side of the mean.
+L- amino acid distributions are used to calcualte D- amino acid outliers
+\section{RCI}
+RCI plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_1$\\ \includegraphics{rci_1}\\
+
+Note: D-amino acids are treated as L-amino acids to calcualte the RCI values.
+\section{Order parameter}
+Order parameter plot for the chemical shifts from the  save frame $assigned\_chem\_shift\_list\_1$\\ \includegraphics{s2_1}\\
+
+Note: D-amino acids are treated as L-amino acids to calcualte the order parameter.
+% \section{Simulated peak positions}
+% Not enough data to simulate spectum\\
+% \section{LACS}
+% Place holder for LACS results
+% \section{Analysis data}
+% place holder for the numerical values and tables.
+\end{document}

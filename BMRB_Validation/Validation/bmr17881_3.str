@@ -1,0 +1,1622 @@
+data_17881
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                    entry_information
+   _Entry.Sf_framecode                   entry_information
+   _Entry.ID                             17881
+   _Entry.Title                         
+;
+Dynamics of isolated C domain of calmodulin apo form
+;
+   _Entry.Type                           macromolecule
+   _Entry.Version_type                   new
+   _Entry.Submission_date                2011-08-24
+   _Entry.Accession_date                 2011-08-24
+   _Entry.Last_release_date              2011-10-10
+   _Entry.Original_release_date          2011-10-10
+   _Entry.Origination                    author
+   _Entry.NMR_STAR_version               3.1.1.61
+   _Entry.Original_NMR_STAR_version      3.1
+   _Entry.Experimental_method            NMR
+   _Entry.Experimental_method_subtype    solution
+   _Entry.Details                        .
+   _Entry.BMRB_internal_directory_name   .
+
+   loop_
+      _Entry_author.Ordinal
+      _Entry_author.Given_name
+      _Entry_author.Family_name
+      _Entry_author.First_initial
+      _Entry_author.Middle_initials
+      _Entry_author.Family_title
+      _Entry_author.Entry_ID
+
+      1 Xu    Wang        . .  . 17881 
+      2 Quinn Kleerekoper . K. . 17881 
+      3 John  Putkey      . A. . 17881 
+
+   stop_
+
+   loop_
+      _SG_project.SG_project_ID
+      _SG_project.Project_name
+      _SG_project.Full_name_of_center
+      _SG_project.Initial_of_center
+      _SG_project.Entry_ID
+
+      1 'not applicable' 'not applicable' . 17881 
+
+   stop_
+
+   loop_
+      _Entry_src.ID
+      _Entry_src.Project_name
+      _Entry_src.Organization_full_name
+      _Entry_src.Organization_initials
+      _Entry_src.Entry_ID
+
+      . 1 'University of Texas Medical School at Houston' . 17881 
+
+   stop_
+
+   loop_
+      _Data_set.Type
+      _Data_set.Count
+      _Data_set.Entry_ID
+
+      assigned_chemical_shifts 1 17881 
+      heteronucl_NOEs          1 17881 
+      heteronucl_T1_relaxation 1 17881 
+      heteronucl_T2_relaxation 1 17881 
+
+   stop_
+
+   loop_
+      _Datum.Type
+      _Datum.Count
+      _Datum.Entry_ID
+
+      '15N chemical shifts'      71 17881 
+      '1H chemical shifts'       71 17881 
+      'heteronuclear NOE values' 69 17881 
+      'T1 relaxation values'     69 17881 
+      'T2 relaxation values'     69 17881 
+
+   stop_
+
+   loop_
+      _Release.Release_number
+      _Release.Format_type
+      _Release.Format_version
+      _Release.Date
+      _Release.Submission_date
+      _Release.Type
+      _Release.Author
+      _Release.Detail
+      _Release.Entry_ID
+
+      1 . . 2011-10-10 2011-08-24 original author . 17881 
+
+   stop_
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+      BMRB 17981 'calcium calmodulin, complex with PEP-19'        17881 
+      BMRB 17982 'calcium calmodulin, complex with Ca'            17881 
+      BMRB 17983 'calcium calmodulin, complex with Ca and PEP-19' 17881 
+
+   stop_
+
+save_
+
+
+###############
+#  Citations  #
+###############
+
+save_citation
+   _Citation.Sf_category                  citations
+   _Citation.Sf_framecode                 citation
+   _Citation.Entry_ID                     17881
+   _Citation.ID                           1
+   _Citation.Class                       'entry citation'
+   _Citation.CAS_abstract_code            .
+   _Citation.MEDLINE_UI_code              .
+   _Citation.DOI                          .
+   _Citation.PubMed_ID                    20973509
+   _Citation.Full_citation                .
+   _Citation.Title                       'Intrinsic disorder of PEP-19 confers unique dynamic properties to apo and calcium calmodulin'
+   _Citation.Status                       published
+   _Citation.Type                         journal
+   _Citation.Journal_abbrev               Biochemistry
+   _Citation.Journal_name_full            .
+   _Citation.Journal_volume               49
+   _Citation.Journal_issue                48
+   _Citation.Journal_ASTM                 .
+   _Citation.Journal_ISSN                 .
+   _Citation.Journal_CSD                  .
+   _Citation.Book_title                   .
+   _Citation.Book_chapter_title           .
+   _Citation.Book_volume                  .
+   _Citation.Book_series                  .
+   _Citation.Book_publisher               .
+   _Citation.Book_publisher_city          .
+   _Citation.Book_ISBN                    .
+   _Citation.Conference_title             .
+   _Citation.Conference_site              .
+   _Citation.Conference_state_province    .
+   _Citation.Conference_country           .
+   _Citation.Conference_start_date        .
+   _Citation.Conference_end_date          .
+   _Citation.Conference_abstract_number   .
+   _Citation.Thesis_institution           .
+   _Citation.Thesis_institution_city      .
+   _Citation.Thesis_institution_country   .
+   _Citation.WWW_URL                      .
+   _Citation.Page_first                   10287
+   _Citation.Page_last                    10297
+   _Citation.Year                         2010
+   _Citation.Details                      .
+
+   loop_
+      _Citation_author.Ordinal
+      _Citation_author.Given_name
+      _Citation_author.Family_name
+      _Citation_author.First_initial
+      _Citation_author.Middle_initials
+      _Citation_author.Family_title
+      _Citation_author.Entry_ID
+      _Citation_author.Citation_ID
+
+      1 Xu        Wang        . .  . 17881 1 
+      2 Quinn     Kleerekoper . K. . 17881 1 
+      3 Liang-wen Xiong       . .  . 17881 1 
+      4 John      Putkey      . A. . 17881 1 
+
+   stop_
+
+   loop_
+      _Citation_keyword.Keyword
+      _Citation_keyword.Entry_ID
+      _Citation_keyword.Citation_ID
+
+       assignment         17881 1 
+      'backbone dynamics' 17881 1 
+      'calcium binding'   17881 1 
+       calmodulin         17881 1 
+       PEP-19             17881 1 
+
+   stop_
+
+save_
+
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_assembly
+   _Assembly.Sf_category                       assembly
+   _Assembly.Sf_framecode                      assembly
+   _Assembly.Entry_ID                          17881
+   _Assembly.ID                                1
+   _Assembly.Name                             'C-CaM apo form'
+   _Assembly.BMRB_code                         .
+   _Assembly.Number_of_components              1
+   _Assembly.Organic_ligands                   .
+   _Assembly.Metal_ions                        .
+   _Assembly.Non_standard_bonds                no
+   _Assembly.Ambiguous_conformational_states   .
+   _Assembly.Ambiguous_chem_comp_sites         .
+   _Assembly.Molecules_in_chemical_exchange    .
+   _Assembly.Paramagnetic                      no
+   _Assembly.Thiol_state                       .
+   _Assembly.Molecular_mass                    .
+   _Assembly.Enzyme_commission_number          .
+   _Assembly.Details                           .
+   _Assembly.DB_query_date                     .
+   _Assembly.DB_query_revised_last_date        .
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+      1 isolcated_c_domain_of_calmodulin 1 $C-CaM A . yes native no no . . . 17881 1 
+
+   stop_
+
+save_
+
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_C-CaM
+   _Entity.Sf_category                       entity
+   _Entity.Sf_framecode                      C-CaM
+   _Entity.Entry_ID                          17881
+   _Entity.ID                                1
+   _Entity.BMRB_code                         .
+   _Entity.Name                              isolcated_c_domain_of_calmodulin
+   _Entity.Type                              polymer
+   _Entity.Polymer_common_type               .
+   _Entity.Polymer_type                      polypeptide(L)
+   _Entity.Polymer_type_details              .
+   _Entity.Polymer_strand_ID                 .
+   _Entity.Polymer_seq_one_letter_code_can   .
+   _Entity.Polymer_seq_one_letter_code      
+;
+DTDSEEEIREAFRVFDKDGN
+GYISAAELRHVMTNLGEKLT
+DEEVDEMIREADIDGDGQVN
+YEEFVQMMTAK
+;
+   _Entity.Target_identifier                 .
+   _Entity.Polymer_author_defined_seq        .
+   _Entity.Polymer_author_seq_details        .
+   _Entity.Ambiguous_conformational_states   yes
+   _Entity.Ambiguous_chem_comp_sites         no
+   _Entity.Nstd_monomer                      no
+   _Entity.Nstd_chirality                    no
+   _Entity.Nstd_linkage                      no
+   _Entity.Nonpolymer_comp_ID                .
+   _Entity.Nonpolymer_comp_label             .
+   _Entity.Number_of_monomers                71
+   _Entity.Number_of_nonpolymer_components   .
+   _Entity.Paramagnetic                      no
+   _Entity.Thiol_state                      'not present'
+   _Entity.Src_method                        .
+   _Entity.Parent_entity_ID                  .
+   _Entity.Fragment                          .
+   _Entity.Mutation                          .
+   _Entity.EC_number                         .
+   _Entity.Calc_isoelectric_point            .
+   _Entity.Formula_weight                    .
+   _Entity.Formula_weight_exptl              .
+   _Entity.Formula_weight_exptl_meth         .
+   _Entity.Details                           .
+   _Entity.DB_query_date                     .
+   _Entity.DB_query_revised_last_date        2015-11-25
+
+   loop_
+      _Entity_db_link.Ordinal
+      _Entity_db_link.Author_supplied
+      _Entity_db_link.Database_code
+      _Entity_db_link.Accession_code
+      _Entity_db_link.Entry_mol_code
+      _Entity_db_link.Entry_mol_name
+      _Entity_db_link.Entry_experimental_method
+      _Entity_db_link.Entry_structure_resolution
+      _Entity_db_link.Entry_relation_type
+      _Entity_db_link.Entry_details
+      _Entity_db_link.Chimera_segment_ID
+      _Entity_db_link.Seq_query_to_submitted_percent
+      _Entity_db_link.Seq_subject_length
+      _Entity_db_link.Seq_identity
+      _Entity_db_link.Seq_positive
+      _Entity_db_link.Seq_homology_expectation_val
+      _Entity_db_link.Seq_align_begin
+      _Entity_db_link.Seq_align_end
+      _Entity_db_link.Seq_difference_details
+      _Entity_db_link.Seq_alignment_details
+      _Entity_db_link.Entry_ID
+      _Entity_db_link.Entity_ID
+
+       1 no BMRB        11440 .  entity                                                                                                                           . . . . . 100.00  72  97.18 100.00 1.27e-40 . . . . 17881 1 
+       2 no BMRB        16994 .  cCaMF92E                                                                                                                         . . . . . 100.00  94  98.59  98.59 1.58e-40 . . . . 17881 1 
+       3 no BMRB        17981 .  isolcated_c_domain_of_calmodulin                                                                                                 . . . . . 100.00  71 100.00 100.00 8.27e-42 . . . . 17881 1 
+       4 no BMRB        17982 .  isolcated_c_domain_of_calmodulin                                                                                                 . . . . . 100.00  71 100.00 100.00 8.27e-42 . . . . 17881 1 
+       5 no BMRB        17983 .  isolcated_c_domain_of_calmodulin                                                                                                 . . . . . 100.00  71 100.00 100.00 8.27e-42 . . . . 17881 1 
+       6 no BMRB        18084 . "Calmodulin C-Lobe"                                                                                                               . . . . .  94.37  67 100.00 100.00 6.89e-39 . . . . 17881 1 
+       7 no BMRB        18323 .  entity                                                                                                                           . . . . . 100.00  71 100.00 100.00 8.27e-42 . . . . 17881 1 
+       8 no BMRB        19376 . "Calmodulin, C-terminal domain"                                                                                                   . . . . . 100.00  75  98.59  98.59 7.93e-41 . . . . 17881 1 
+       9 no BMRB        25344 .  CaM_E140Q_Tr2C                                                                                                                   . . . . . 100.00  73  98.59 100.00 1.69e-41 . . . . 17881 1 
+      10 no PDB  1CMF          . "Nmr Solution Structure Of Apo Calmodulin Carboxy-Terminal Domain"                                                                . . . . . 100.00  73 100.00 100.00 7.91e-42 . . . . 17881 1 
+      11 no PDB  1CMG          . "Nmr Solution Structure Of Calcium-Loaded Calmodulin Carboxy- Terminal Domain"                                                    . . . . . 100.00  73 100.00 100.00 7.91e-42 . . . . 17881 1 
+      12 no PDB  1F71          . "Refined Solution Structure Of Calmodulin C-Terminal Domain"                                                                      . . . . .  94.37  67 100.00 100.00 6.89e-39 . . . . 17881 1 
+      13 no PDB  1FW4          . "Crystal Structure Of E. Coli Fragment Tr2c From Calmodulin To 1.7 A Resolution"                                                  . . . . . 100.00  71 100.00 100.00 8.27e-42 . . . . 17881 1 
+      14 no PDB  1J7P          . "Solution Structure Of Calcium Calmodulin C-Terminal Domain"                                                                      . . . . .  94.37  67 100.00 100.00 6.89e-39 . . . . 17881 1 
+      15 no PDB  1YRT          . "Crystal Structure Analysis Of The Adenylyl Cyclaes Catalytic Domain Of Adenylyl Cyclase Toxin Of Bordetella Pertussis In Presen" . . . . . 100.00  74 100.00 100.00 7.70e-42 . . . . 17881 1 
+      16 no PDB  1YRU          . "Crystal Structure Analysis Of The Adenylyl Cyclaes Catalytic Domain Of Adenylyl Cyclase Toxin Of Bordetella Pertussis In Presen" . . . . . 100.00  74 100.00 100.00 7.70e-42 . . . . 17881 1 
+      17 no PDB  1ZOT          . "Crystal Structure Analysis Of The CyaaC-Cam With Pmeapp"                                                                         . . . . .  97.18  69 100.00 100.00 2.97e-40 . . . . 17881 1 
+      18 no PDB  2COL          . "Crystal Structure Analysis Of CyaaC-Cam With Pyrophosphate"                                                                      . . . . .  94.37  67 100.00 100.00 9.65e-39 . . . . 17881 1 
+      19 no PDB  2HF5          . "The Structure And Function Of A Novel Two-Site Calcium- Binding Fragment Of Calmodulin"                                          . . . . .  50.70  68 100.00 100.00 8.06e-16 . . . . 17881 1 
+      20 no PDB  2K3S          . "Haddock-Derived Structure Of The Ch-Domain Of The Smoothelin-Like 1 Complexed With The C-Domain Of Apocalmodulin"                . . . . .  94.37  67 100.00 100.00 6.89e-39 . . . . 17881 1 
+      21 no PDB  2KUH          . "Halothane Binds To Druggable Sites In Calcium-calmodulin: Solution Structure Of Halothane-cam C-terminal Domain"                 . . . . .  94.37  67 100.00 100.00 6.89e-39 . . . . 17881 1 
+      22 no PDB  2KZ2          . "Calmodulin, C-terminal Domain, F92e Mutant"                                                                                      . . . . . 100.00  94  98.59  98.59 1.58e-40 . . . . 17881 1 
+      23 no PDB  2LLQ          . "Solution Nmr-derived Structure Of Calmodulin C-lobe Bound With Er Alpha Peptide"                                                 . . . . .  94.37  67 100.00 100.00 6.89e-39 . . . . 17881 1 
+      24 no PDB  2LQP          . "Nmr Solution Structure Of The Ca2+-Calmodulin C-Terminal Domain In A Complex With A Peptide (Nscate) From The L-Type Voltage-Ga" . . . . . 100.00  71 100.00 100.00 8.27e-42 . . . . 17881 1 
+      25 no PDB  2RRT          . "Solution Structure Of Magnesium-Bound Form Of Calmodulin C-Domain E104dE140D MUTANT"                                             . . . . . 100.00  72  97.18 100.00 1.27e-40 . . . . 17881 1 
+      26 no PDB  4BYA          . "Calmodulin, C-terminal Domain, M144h Mutant"                                                                                     . . . . . 100.00  75  98.59  98.59 7.93e-41 . . . . 17881 1 
+      27 no PDB  4RJD          . "Tfp Bound In Alternate Orientations To Calcium-saturated Calmodulin C- Domains"                                                  . . . . .  92.96  66 100.00 100.00 5.59e-38 . . . . 17881 1 
+      28 no DBJ  BAC39089      . "unnamed protein product [Mus musculus]"                                                                                          . . . . . 100.00  80  98.59  98.59 8.15e-41 . . . . 17881 1 
+      29 no DBJ  BAF45809      . "calmodulin, partial [Thunnus thynnus]"                                                                                           . . . . .  80.28  66 100.00 100.00 9.56e-31 . . . . 17881 1 
+      30 no DBJ  BAI66109      . "calmodulin [Oryzias latipes]"                                                                                                    . . . . .  54.93  56  97.44  97.44 4.59e-17 . . . . 17881 1 
+      31 no DBJ  BAI66110      . "calmodulin [Oryzias latipes]"                                                                                                    . . . . .  54.93  56  97.44  97.44 4.59e-17 . . . . 17881 1 
+      32 no DBJ  BAI66111      . "calmodulin [Oryzias latipes]"                                                                                                    . . . . .  54.93  56 100.00 100.00 4.96e-18 . . . . 17881 1 
+      33 no EMBL CAB51566      . "calmodulin [Drosophila melanogaster]"                                                                                            . . . . .  87.32  80  98.39 100.00 4.25e-34 . . . . 17881 1 
+      34 no GB   AAH10730      . "Calm2 protein, partial [Mus musculus]"                                                                                           . . . . . 100.00  97 100.00 100.00 1.65e-41 . . . . 17881 1 
+      35 no GB   AAO17827      . "calmodulin, partial [Paralichthys olivaceus]"                                                                                    . . . . .  91.55  65 100.00 100.00 9.60e-38 . . . . 17881 1 
+      36 no GB   AAQ14324      . "calmodulin 1, partial [Sus scrofa]"                                                                                              . . . . . 100.00  77 100.00 100.00 6.64e-42 . . . . 17881 1 
+      37 no GB   AAX61134      . "calmodulin [Oreochromis mossambicus]"                                                                                            . . . . .  60.56  43 100.00 100.00 8.09e-21 . . . . 17881 1 
+      38 no GB   AAY87961      . "calmodulin [Prochilodus rubrotaeniatus]"                                                                                         . . . . .  50.70  41 100.00 100.00 4.31e-16 . . . . 17881 1 
+      39 no REF  XP_001687795  . "Anopheles gambiae str. PEST AGAP012844-PA [Anopheles gambiae str. PEST]"                                                         . . . . .  87.32  98  98.39 100.00 3.32e-34 . . . . 17881 1 
+      40 no REF  XP_001869425  . "calmodulin [Culex quinquefasciatus]"                                                                                             . . . . .  87.32  66  98.39 100.00 3.33e-34 . . . . 17881 1 
+      41 no REF  XP_007442524  . "PREDICTED: calmodulin-like [Python bivittatus]"                                                                                  . . . . . 100.00 136 100.00 100.00 5.12e-41 . . . . 17881 1 
+      42 no REF  XP_009577260  . "PREDICTED: calmodulin, partial [Fulmarus glacialis]"                                                                             . . . . .  87.32 100 100.00 100.00 4.88e-35 . . . . 17881 1 
+      43 no REF  XP_010190430  . "PREDICTED: calmodulin-like, partial [Mesitornis unicolor]"                                                                       . . . . . 100.00  89 100.00 100.00 1.11e-41 . . . . 17881 1 
+
+   stop_
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+       1  78 ASP . 17881 1 
+       2  79 THR . 17881 1 
+       3  80 ASP . 17881 1 
+       4  81 SER . 17881 1 
+       5  82 GLU . 17881 1 
+       6  83 GLU . 17881 1 
+       7  84 GLU . 17881 1 
+       8  85 ILE . 17881 1 
+       9  86 ARG . 17881 1 
+      10  87 GLU . 17881 1 
+      11  88 ALA . 17881 1 
+      12  89 PHE . 17881 1 
+      13  90 ARG . 17881 1 
+      14  91 VAL . 17881 1 
+      15  92 PHE . 17881 1 
+      16  93 ASP . 17881 1 
+      17  94 LYS . 17881 1 
+      18  95 ASP . 17881 1 
+      19  96 GLY . 17881 1 
+      20  97 ASN . 17881 1 
+      21  98 GLY . 17881 1 
+      22  99 TYR . 17881 1 
+      23 100 ILE . 17881 1 
+      24 101 SER . 17881 1 
+      25 102 ALA . 17881 1 
+      26 103 ALA . 17881 1 
+      27 104 GLU . 17881 1 
+      28 105 LEU . 17881 1 
+      29 106 ARG . 17881 1 
+      30 107 HIS . 17881 1 
+      31 108 VAL . 17881 1 
+      32 109 MET . 17881 1 
+      33 110 THR . 17881 1 
+      34 111 ASN . 17881 1 
+      35 112 LEU . 17881 1 
+      36 113 GLY . 17881 1 
+      37 114 GLU . 17881 1 
+      38 115 LYS . 17881 1 
+      39 116 LEU . 17881 1 
+      40 117 THR . 17881 1 
+      41 118 ASP . 17881 1 
+      42 119 GLU . 17881 1 
+      43 120 GLU . 17881 1 
+      44 121 VAL . 17881 1 
+      45 122 ASP . 17881 1 
+      46 123 GLU . 17881 1 
+      47 124 MET . 17881 1 
+      48 125 ILE . 17881 1 
+      49 126 ARG . 17881 1 
+      50 127 GLU . 17881 1 
+      51 128 ALA . 17881 1 
+      52 129 ASP . 17881 1 
+      53 130 ILE . 17881 1 
+      54 131 ASP . 17881 1 
+      55 132 GLY . 17881 1 
+      56 133 ASP . 17881 1 
+      57 134 GLY . 17881 1 
+      58 135 GLN . 17881 1 
+      59 136 VAL . 17881 1 
+      60 137 ASN . 17881 1 
+      61 138 TYR . 17881 1 
+      62 139 GLU . 17881 1 
+      63 140 GLU . 17881 1 
+      64 141 PHE . 17881 1 
+      65 142 VAL . 17881 1 
+      66 143 GLN . 17881 1 
+      67 144 MET . 17881 1 
+      68 145 MET . 17881 1 
+      69 146 THR . 17881 1 
+      70 147 ALA . 17881 1 
+      71 148 LYS . 17881 1 
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+      . ASP  1  1 17881 1 
+      . THR  2  2 17881 1 
+      . ASP  3  3 17881 1 
+      . SER  4  4 17881 1 
+      . GLU  5  5 17881 1 
+      . GLU  6  6 17881 1 
+      . GLU  7  7 17881 1 
+      . ILE  8  8 17881 1 
+      . ARG  9  9 17881 1 
+      . GLU 10 10 17881 1 
+      . ALA 11 11 17881 1 
+      . PHE 12 12 17881 1 
+      . ARG 13 13 17881 1 
+      . VAL 14 14 17881 1 
+      . PHE 15 15 17881 1 
+      . ASP 16 16 17881 1 
+      . LYS 17 17 17881 1 
+      . ASP 18 18 17881 1 
+      . GLY 19 19 17881 1 
+      . ASN 20 20 17881 1 
+      . GLY 21 21 17881 1 
+      . TYR 22 22 17881 1 
+      . ILE 23 23 17881 1 
+      . SER 24 24 17881 1 
+      . ALA 25 25 17881 1 
+      . ALA 26 26 17881 1 
+      . GLU 27 27 17881 1 
+      . LEU 28 28 17881 1 
+      . ARG 29 29 17881 1 
+      . HIS 30 30 17881 1 
+      . VAL 31 31 17881 1 
+      . MET 32 32 17881 1 
+      . THR 33 33 17881 1 
+      . ASN 34 34 17881 1 
+      . LEU 35 35 17881 1 
+      . GLY 36 36 17881 1 
+      . GLU 37 37 17881 1 
+      . LYS 38 38 17881 1 
+      . LEU 39 39 17881 1 
+      . THR 40 40 17881 1 
+      . ASP 41 41 17881 1 
+      . GLU 42 42 17881 1 
+      . GLU 43 43 17881 1 
+      . VAL 44 44 17881 1 
+      . ASP 45 45 17881 1 
+      . GLU 46 46 17881 1 
+      . MET 47 47 17881 1 
+      . ILE 48 48 17881 1 
+      . ARG 49 49 17881 1 
+      . GLU 50 50 17881 1 
+      . ALA 51 51 17881 1 
+      . ASP 52 52 17881 1 
+      . ILE 53 53 17881 1 
+      . ASP 54 54 17881 1 
+      . GLY 55 55 17881 1 
+      . ASP 56 56 17881 1 
+      . GLY 57 57 17881 1 
+      . GLN 58 58 17881 1 
+      . VAL 59 59 17881 1 
+      . ASN 60 60 17881 1 
+      . TYR 61 61 17881 1 
+      . GLU 62 62 17881 1 
+      . GLU 63 63 17881 1 
+      . PHE 64 64 17881 1 
+      . VAL 65 65 17881 1 
+      . GLN 66 66 17881 1 
+      . MET 67 67 17881 1 
+      . MET 68 68 17881 1 
+      . THR 69 69 17881 1 
+      . ALA 70 70 17881 1 
+      . LYS 71 71 17881 1 
+
+   stop_
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Entity_natural_src_list.Sf_category    natural_source
+   _Entity_natural_src_list.Sf_framecode   natural_source
+   _Entity_natural_src_list.Entry_ID       17881
+   _Entity_natural_src_list.ID             1
+
+   loop_
+      _Entity_natural_src.ID
+      _Entity_natural_src.Entity_ID
+      _Entity_natural_src.Entity_label
+      _Entity_natural_src.Entity_chimera_segment_ID
+      _Entity_natural_src.NCBI_taxonomy_ID
+      _Entity_natural_src.Type
+      _Entity_natural_src.Common
+      _Entity_natural_src.Organism_name_scientific
+      _Entity_natural_src.Organism_name_common
+      _Entity_natural_src.Organism_acronym
+      _Entity_natural_src.ICTVdb_decimal_code
+      _Entity_natural_src.Superkingdom
+      _Entity_natural_src.Kingdom
+      _Entity_natural_src.Genus
+      _Entity_natural_src.Species
+      _Entity_natural_src.Strain
+      _Entity_natural_src.Variant
+      _Entity_natural_src.Subvariant
+      _Entity_natural_src.Organ
+      _Entity_natural_src.Tissue
+      _Entity_natural_src.Tissue_fraction
+      _Entity_natural_src.Cell_line
+      _Entity_natural_src.Cell_type
+      _Entity_natural_src.ATCC_number
+      _Entity_natural_src.Organelle
+      _Entity_natural_src.Cellular_location
+      _Entity_natural_src.Fragment
+      _Entity_natural_src.Fraction
+      _Entity_natural_src.Secretion
+      _Entity_natural_src.Plasmid
+      _Entity_natural_src.Plasmid_details
+      _Entity_natural_src.Gene_mnemonic
+      _Entity_natural_src.Dev_stage
+      _Entity_natural_src.Details
+      _Entity_natural_src.Citation_ID
+      _Entity_natural_src.Citation_label
+      _Entity_natural_src.Entry_ID
+      _Entity_natural_src.Entity_natural_src_list_ID
+
+      1 1 $C-CaM . 9606 organism . 'Homo sapiens' Human . . Eukaryota Metazoa Homo sapiens . . . . . . . . . . . . . . . . . . . . . 17881 1 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Entity_experimental_src_list.Sf_category    experimental_source
+   _Entity_experimental_src_list.Sf_framecode   experimental_source
+   _Entity_experimental_src_list.Entry_ID       17881
+   _Entity_experimental_src_list.ID             1
+
+   loop_
+      _Entity_experimental_src.ID
+      _Entity_experimental_src.Entity_ID
+      _Entity_experimental_src.Entity_label
+      _Entity_experimental_src.Entity_chimera_segment_ID
+      _Entity_experimental_src.Production_method
+      _Entity_experimental_src.Host_org_scientific_name
+      _Entity_experimental_src.Host_org_name_common
+      _Entity_experimental_src.Host_org_details
+      _Entity_experimental_src.Host_org_NCBI_taxonomy_ID
+      _Entity_experimental_src.Host_org_genus
+      _Entity_experimental_src.Host_org_species
+      _Entity_experimental_src.Host_org_strain
+      _Entity_experimental_src.Host_org_variant
+      _Entity_experimental_src.Host_org_subvariant
+      _Entity_experimental_src.Host_org_organ
+      _Entity_experimental_src.Host_org_tissue
+      _Entity_experimental_src.Host_org_tissue_fraction
+      _Entity_experimental_src.Host_org_cell_line
+      _Entity_experimental_src.Host_org_cell_type
+      _Entity_experimental_src.Host_org_cellular_location
+      _Entity_experimental_src.Host_org_organelle
+      _Entity_experimental_src.Host_org_gene
+      _Entity_experimental_src.Host_org_culture_collection
+      _Entity_experimental_src.Host_org_ATCC_number
+      _Entity_experimental_src.Vector_type
+      _Entity_experimental_src.PDBview_host_org_vector_name
+      _Entity_experimental_src.PDBview_plasmid_name
+      _Entity_experimental_src.Vector_name
+      _Entity_experimental_src.Vector_details
+      _Entity_experimental_src.Vendor_name
+      _Entity_experimental_src.Host_org_dev_stage
+      _Entity_experimental_src.Details
+      _Entity_experimental_src.Citation_ID
+      _Entity_experimental_src.Citation_label
+      _Entity_experimental_src.Entry_ID
+      _Entity_experimental_src.Entity_experimental_src_list_ID
+
+      1 1 $C-CaM . 'recombinant technology' 'Escherichia coli' . . . Escherichia coli . . . . . . . . . . . . . . . . pLysS . . . . . . 17881 1 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_apo_C-CaM
+   _Sample.Sf_category                      sample
+   _Sample.Sf_framecode                     apo_C-CaM
+   _Sample.Entry_ID                         17881
+   _Sample.ID                               1
+   _Sample.Type                             solution
+   _Sample.Sub_type                         .
+   _Sample.Details                         'apo 15N labeled isolated C-domain of calmodulin(Residues 78-148).'
+   _Sample.Aggregate_sample_number          .
+   _Sample.Solvent_system                  '95% H2O/5% D2O'
+   _Sample.Preparation_date                 .
+   _Sample.Preparation_expiration_date      .
+   _Sample.Polycrystallization_protocol     .
+   _Sample.Single_crystal_protocol          .
+   _Sample.Crystal_grow_apparatus           .
+   _Sample.Crystal_grow_atmosphere          .
+   _Sample.Crystal_grow_details             .
+   _Sample.Crystal_grow_method              .
+   _Sample.Crystal_grow_method_cit_ID       .
+   _Sample.Crystal_grow_pH                  .
+   _Sample.Crystal_grow_pH_range            .
+   _Sample.Crystal_grow_pressure            .
+   _Sample.Crystal_grow_pressure_esd        .
+   _Sample.Crystal_grow_seeding             .
+   _Sample.Crystal_grow_seeding_cit_ID      .
+   _Sample.Crystal_grow_temp                .
+   _Sample.Crystal_grow_temp_details        .
+   _Sample.Crystal_grow_temp_esd            .
+   _Sample.Crystal_grow_time                .
+   _Sample.Oriented_sample_prep_protocol    .
+   _Sample.Lyophilization_cryo_protectant   .
+   _Sample.Storage_protocol                 .
+
+   loop_
+      _Sample_component.ID
+      _Sample_component.Mol_common_name
+      _Sample_component.Isotopic_labeling
+      _Sample_component.Assembly_ID
+      _Sample_component.Assembly_label
+      _Sample_component.Entity_ID
+      _Sample_component.Entity_label
+      _Sample_component.Product_ID
+      _Sample_component.Type
+      _Sample_component.Concentration_val
+      _Sample_component.Concentration_val_min
+      _Sample_component.Concentration_val_max
+      _Sample_component.Concentration_val_units
+      _Sample_component.Concentration_val_err
+      _Sample_component.Vendor
+      _Sample_component.Vendor_product_name
+      _Sample_component.Vendor_product_code
+      _Sample_component.Entry_ID
+      _Sample_component.Sample_ID
+
+      1 'isolcated c domain of calmodulin' '[U-100% 15N]'      . . 1 $C-CaM . .   0.5 . . mM . . . . 17881 1 
+      2  EDTA                              'natural abundance' . .  .  .     . .  10   . . mM . . . . 17881 1 
+      3 'potassium chloride'               'natural abundance' . .  .  .     . . 100   . . mM . . . . 17881 1 
+      4  H2O                               'natural abundance' . .  .  .     . .  95   . . %  . . . . 17881 1 
+      5  D2O                               'natural abundance' . .  .  .     . .   5   . . %  . . . . 17881 1 
+
+   stop_
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_sample_conditions_1
+   _Sample_condition_list.Sf_category    sample_conditions
+   _Sample_condition_list.Sf_framecode   sample_conditions_1
+   _Sample_condition_list.Entry_ID       17881
+   _Sample_condition_list.ID             1
+   _Sample_condition_list.Details        .
+
+   loop_
+      _Sample_condition_variable.Type
+      _Sample_condition_variable.Val
+      _Sample_condition_variable.Val_err
+      _Sample_condition_variable.Val_units
+      _Sample_condition_variable.Entry_ID
+      _Sample_condition_variable.Sample_condition_list_ID
+
+      'ionic strength'   0.1 . M   17881 1 
+       pH                6.3 . pH  17881 1 
+       pressure          1   . atm 17881 1 
+       temperature     298   . K   17881 1 
+
+   stop_
+
+save_
+
+
+############################
+#  Computer software used  #
+############################
+
+save_Felix
+   _Software.Sf_category    software
+   _Software.Sf_framecode   Felix
+   _Software.Entry_ID       17881
+   _Software.ID             1
+   _Software.Name           FELIX
+   _Software.Version        2004
+   _Software.Details        .
+
+   loop_
+      _Vendor.Name
+      _Vendor.Address
+      _Vendor.Electronic_address
+      _Vendor.Entry_ID
+      _Vendor.Software_ID
+
+      'Accelrys Software Inc.' . . 17881 1 
+
+   stop_
+
+   loop_
+      _Task.Task
+      _Task.Entry_ID
+      _Task.Software_ID
+
+      'peak picking' 17881 1 
+       processing    17881 1 
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_spectrometer_1
+   _NMR_spectrometer.Sf_category      NMR_spectrometer
+   _NMR_spectrometer.Sf_framecode     spectrometer_1
+   _NMR_spectrometer.Entry_ID         17881
+   _NMR_spectrometer.ID               1
+   _NMR_spectrometer.Details          .
+   _NMR_spectrometer.Manufacturer     Bruker
+   _NMR_spectrometer.Model            DPX
+   _NMR_spectrometer.Serial_number    .
+   _NMR_spectrometer.Field_strength   600
+
+save_
+
+
+save_NMR_spectrometer_list
+   _NMR_spectrometer_list.Sf_category    NMR_spectrometer_list
+   _NMR_spectrometer_list.Sf_framecode   NMR_spectrometer_list
+   _NMR_spectrometer_list.Entry_ID       17881
+   _NMR_spectrometer_list.ID             1
+
+   loop_
+      _NMR_spectrometer_view.ID
+      _NMR_spectrometer_view.Name
+      _NMR_spectrometer_view.Manufacturer
+      _NMR_spectrometer_view.Model
+      _NMR_spectrometer_view.Serial_number
+      _NMR_spectrometer_view.Field_strength
+      _NMR_spectrometer_view.Details
+      _NMR_spectrometer_view.Citation_ID
+      _NMR_spectrometer_view.Citation_label
+      _NMR_spectrometer_view.Entry_ID
+      _NMR_spectrometer_view.NMR_spectrometer_list_ID
+
+      1 spectrometer_1 Bruker DPX . 600 . . . 17881 1 
+
+   stop_
+
+save_
+
+
+    #############################
+    #  NMR applied experiments  #
+    #############################
+
+save_experiment_list
+   _Experiment_list.Sf_category    experiment_list
+   _Experiment_list.Sf_framecode   experiment_list
+   _Experiment_list.Entry_ID       17881
+   _Experiment_list.ID             1
+   _Experiment_list.Details        .
+
+   loop_
+      _Experiment.ID
+      _Experiment.Name
+      _Experiment.Raw_data_flag
+      _Experiment.NMR_spec_expt_ID
+      _Experiment.NMR_spec_expt_label
+      _Experiment.MS_expt_ID
+      _Experiment.MS_expt_label
+      _Experiment.SAXS_expt_ID
+      _Experiment.SAXS_expt_label
+      _Experiment.FRET_expt_ID
+      _Experiment.FRET_expt_label
+      _Experiment.EMR_expt_ID
+      _Experiment.EMR_expt_label
+      _Experiment.Sample_ID
+      _Experiment.Sample_label
+      _Experiment.Sample_state
+      _Experiment.Sample_volume
+      _Experiment.Sample_volume_units
+      _Experiment.Sample_condition_list_ID
+      _Experiment.Sample_condition_list_label
+      _Experiment.Sample_spinning_rate
+      _Experiment.Sample_angle
+      _Experiment.NMR_tube_type
+      _Experiment.NMR_spectrometer_ID
+      _Experiment.NMR_spectrometer_label
+      _Experiment.NMR_spectrometer_probe_ID
+      _Experiment.NMR_spectrometer_probe_label
+      _Experiment.NMR_spectral_processing_ID
+      _Experiment.NMR_spectral_processing_label
+      _Experiment.Mass_spectrometer_ID
+      _Experiment.Mass_spectrometer_label
+      _Experiment.Xray_instrument_ID
+      _Experiment.Xray_instrument_label
+      _Experiment.Fluorescence_instrument_ID
+      _Experiment.Fluorescence_instrument_label
+      _Experiment.EMR_instrument_ID
+      _Experiment.EMR_instrument_label
+      _Experiment.Chromatographic_system_ID
+      _Experiment.Chromatographic_system_label
+      _Experiment.Chromatographic_column_ID
+      _Experiment.Chromatographic_column_label
+      _Experiment.Entry_ID
+      _Experiment.Experiment_list_ID
+
+       1  T1               no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+       2  T2               no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+       3  NOE              no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+       4 '2D 1H-15N HSQC'  no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+       5 '3D HNCA'         no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+       6 '3D HN(CO)CA'     no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+       7 '3D CBCA(CO)NH'   no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+       8 '3D HNCACB'       no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+       9 '3D HNCO'         no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+      10 '3D 1H-15N NOESY' no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+      11 '3D 1H-15N TOCSY' no . . . . . . . . . . 1 $apo_C-CaM isotropic . . 1 $sample_conditions_1 . . . 1 $spectrometer_1 . . . . . . . . . . . . . . . . 17881 1 
+
+   stop_
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_reference_1
+   _Chem_shift_reference.Sf_category    chem_shift_reference
+   _Chem_shift_reference.Sf_framecode   chemical_shift_reference_1
+   _Chem_shift_reference.Entry_ID       17881
+   _Chem_shift_reference.ID             1
+   _Chem_shift_reference.Details        .
+
+   loop_
+      _Chem_shift_ref.Atom_type
+      _Chem_shift_ref.Atom_isotope_number
+      _Chem_shift_ref.Mol_common_name
+      _Chem_shift_ref.Atom_group
+      _Chem_shift_ref.Concentration_val
+      _Chem_shift_ref.Concentration_units
+      _Chem_shift_ref.Solvent
+      _Chem_shift_ref.Rank
+      _Chem_shift_ref.Chem_shift_units
+      _Chem_shift_ref.Chem_shift_val
+      _Chem_shift_ref.Ref_method
+      _Chem_shift_ref.Ref_type
+      _Chem_shift_ref.Indirect_shift_ratio
+      _Chem_shift_ref.External_ref_loc
+      _Chem_shift_ref.External_ref_sample_geometry
+      _Chem_shift_ref.External_ref_axis
+      _Chem_shift_ref.Indirect_shift_ratio_cit_ID
+      _Chem_shift_ref.Indirect_shift_ratio_cit_label
+      _Chem_shift_ref.Ref_correction_type
+      _Chem_shift_ref.Correction_val
+      _Chem_shift_ref.Correction_val_cit_ID
+      _Chem_shift_ref.Correction_val_cit_label
+      _Chem_shift_ref.Entry_ID
+      _Chem_shift_ref.Chem_shift_reference_ID
+
+      H  1 DSS 'methyl protons' . . . . ppm 0 internal indirect 1.0         . . . . . . . . . 17881 1 
+      N 15 DSS 'methyl protons' . . . . ppm 0 internal indirect 0.101329118 . . . . . . . . . 17881 1 
+
+   stop_
+
+save_
+
+
+     ###################################
+     #  Assigned chemical shift lists  #
+     ###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+# The values other than 1 are used for those atoms with different #
+# chemical shifts that cannot be assigned to stereospecific atoms #
+# or to specific residues or chains.                              #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (including isolated methyl protons,   #
+#                         geminal atoms, and geminal methyl       #
+#                         groups with identical chemical shifts)  #
+#                         (e.g. ILE HD11, HD12, HD13 protons)     #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups (e.g. ASP HB2 and HB3     #
+#                         protons, LEU CD1 and CD2 carbons, or    #
+#                         LEU HD11, HD12, HD13 and HD21, HD22,    #
+#                         HD23 methyl protons)                    #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. TYR HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. LYS HG and    #
+#                         HD protons or TRP HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (LYS 12 vs. LYS 27) #
+#      6             Intermolecular ambiguities (e.g. ASP 31 CA   #
+#                         in monomer 1 and ASP 31 CA in monomer 2 #
+#                         of an asymmetrical homodimer, duplex    #
+#                         DNA assignments, or other assignments   #
+#                         that may apply to atoms in one or more  #
+#                         molecule in the molecular assembly)     #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+save_hn_apo_CCaM
+   _Assigned_chem_shift_list.Sf_category                   assigned_chemical_shifts
+   _Assigned_chem_shift_list.Sf_framecode                  hn_apo_CCaM
+   _Assigned_chem_shift_list.Entry_ID                      17881
+   _Assigned_chem_shift_list.ID                            1
+   _Assigned_chem_shift_list.Sample_condition_list_ID      1
+   _Assigned_chem_shift_list.Sample_condition_list_label  $sample_conditions_1
+   _Assigned_chem_shift_list.Chem_shift_reference_ID       1
+   _Assigned_chem_shift_list.Chem_shift_reference_label   $chemical_shift_reference_1
+   _Assigned_chem_shift_list.Chem_shift_1H_err             0.01
+   _Assigned_chem_shift_list.Chem_shift_13C_err            .
+   _Assigned_chem_shift_list.Chem_shift_15N_err            0.1
+   _Assigned_chem_shift_list.Chem_shift_31P_err            .
+   _Assigned_chem_shift_list.Chem_shift_2H_err             .
+   _Assigned_chem_shift_list.Chem_shift_19F_err            .
+   _Assigned_chem_shift_list.Error_derivation_method       .
+   _Assigned_chem_shift_list.Details                       .
+   _Assigned_chem_shift_list.Text_data_format              .
+   _Assigned_chem_shift_list.Text_data                     .
+
+   loop_
+      _Chem_shift_experiment.Experiment_ID
+      _Chem_shift_experiment.Experiment_name
+      _Chem_shift_experiment.Sample_ID
+      _Chem_shift_experiment.Sample_label
+      _Chem_shift_experiment.Sample_state
+      _Chem_shift_experiment.Entry_ID
+      _Chem_shift_experiment.Assigned_chem_shift_list_ID
+
+       4 '2D 1H-15N HSQC'  . . . 17881 1 
+       5 '3D HNCA'         . . . 17881 1 
+       6 '3D HN(CO)CA'     . . . 17881 1 
+       7 '3D CBCA(CO)NH'   . . . 17881 1 
+       8 '3D HNCACB'       . . . 17881 1 
+       9 '3D HNCO'         . . . 17881 1 
+      10 '3D 1H-15N NOESY' . . . 17881 1 
+      11 '3D 1H-15N TOCSY' . . . 17881 1 
+
+   stop_
+
+   loop_
+      _Atom_chem_shift.ID
+      _Atom_chem_shift.Assembly_atom_ID
+      _Atom_chem_shift.Entity_assembly_ID
+      _Atom_chem_shift.Entity_ID
+      _Atom_chem_shift.Comp_index_ID
+      _Atom_chem_shift.Seq_ID
+      _Atom_chem_shift.Comp_ID
+      _Atom_chem_shift.Atom_ID
+      _Atom_chem_shift.Atom_type
+      _Atom_chem_shift.Atom_isotope_number
+      _Atom_chem_shift.Val
+      _Atom_chem_shift.Val_err
+      _Atom_chem_shift.Assign_fig_of_merit
+      _Atom_chem_shift.Ambiguity_code
+      _Atom_chem_shift.Occupancy
+      _Atom_chem_shift.Resonance_ID
+      _Atom_chem_shift.Auth_entity_assembly_ID
+      _Atom_chem_shift.Auth_asym_ID
+      _Atom_chem_shift.Auth_seq_ID
+      _Atom_chem_shift.Auth_comp_ID
+      _Atom_chem_shift.Auth_atom_ID
+      _Atom_chem_shift.Details
+      _Atom_chem_shift.Entry_ID
+      _Atom_chem_shift.Assigned_chem_shift_list_ID
+
+        1 . 1 1  1  1 ASP H H  1   8.60 0.01 . 1 . . . .  78 ASP H . 17881 1 
+        2 . 1 1  1  1 ASP N N 15 122.04 0.1  . 1 . . . .  78 ASP N . 17881 1 
+        3 . 1 1  2  2 THR H H  1   8.05 0.01 . 1 . . . .  79 THR H . 17881 1 
+        4 . 1 1  2  2 THR N N 15 113.20 0.1  . 1 . . . .  79 THR N . 17881 1 
+        5 . 1 1  3  3 ASP H H  1   8.34 0.01 . 1 . . . .  80 ASP H . 17881 1 
+        6 . 1 1  3  3 ASP N N 15 122.83 0.1  . 1 . . . .  80 ASP N . 17881 1 
+        7 . 1 1  4  4 SER H H  1   8.37 0.01 . 1 . . . .  81 SER H . 17881 1 
+        8 . 1 1  4  4 SER N N 15 116.63 0.1  . 1 . . . .  81 SER N . 17881 1 
+        9 . 1 1  5  5 GLU H H  1   8.54 0.01 . 1 . . . .  82 GLU H . 17881 1 
+       10 . 1 1  5  5 GLU N N 15 122.66 0.1  . 1 . . . .  82 GLU N . 17881 1 
+       11 . 1 1  6  6 GLU H H  1   8.27 0.01 . 1 . . . .  83 GLU H . 17881 1 
+       12 . 1 1  6  6 GLU N N 15 118.17 0.1  . 1 . . . .  83 GLU N . 17881 1 
+       13 . 1 1  7  7 GLU H H  1   7.94 0.01 . 1 . . . .  84 GLU H . 17881 1 
+       14 . 1 1  7  7 GLU N N 15 119.39 0.1  . 1 . . . .  84 GLU N . 17881 1 
+       15 . 1 1  8  8 ILE H H  1   7.98 0.01 . 1 . . . .  85 ILE H . 17881 1 
+       16 . 1 1  8  8 ILE N N 15 120.53 0.1  . 1 . . . .  85 ILE N . 17881 1 
+       17 . 1 1  9  9 ARG H H  1   8.38 0.01 . 1 . . . .  86 ARG H . 17881 1 
+       18 . 1 1  9  9 ARG N N 15 119.46 0.1  . 1 . . . .  86 ARG N . 17881 1 
+       19 . 1 1 10 10 GLU H H  1   8.33 0.01 . 1 . . . .  87 GLU H . 17881 1 
+       20 . 1 1 10 10 GLU N N 15 117.03 0.1  . 1 . . . .  87 GLU N . 17881 1 
+       21 . 1 1 11 11 ALA H H  1   7.51 0.01 . 1 . . . .  88 ALA H . 17881 1 
+       22 . 1 1 11 11 ALA N N 15 121.56 0.1  . 1 . . . .  88 ALA N . 17881 1 
+       23 . 1 1 12 12 PHE H H  1   7.50 0.01 . 1 . . . .  89 PHE H . 17881 1 
+       24 . 1 1 12 12 PHE N N 15 114.47 0.1  . 1 . . . .  89 PHE N . 17881 1 
+       25 . 1 1 13 13 ARG H H  1   8.24 0.01 . 1 . . . .  90 ARG H . 17881 1 
+       26 . 1 1 13 13 ARG N N 15 118.14 0.1  . 1 . . . .  90 ARG N . 17881 1 
+       27 . 1 1 14 14 VAL H H  1   7.15 0.01 . 1 . . . .  91 VAL H . 17881 1 
+       28 . 1 1 14 14 VAL N N 15 117.14 0.1  . 1 . . . .  91 VAL N . 17881 1 
+       29 . 1 1 15 15 PHE H H  1   7.34 0.01 . 1 . . . .  92 PHE H . 17881 1 
+       30 . 1 1 15 15 PHE N N 15 116.00 0.1  . 1 . . . .  92 PHE N . 17881 1 
+       31 . 1 1 16 16 ASP H H  1   7.83 0.01 . 1 . . . .  93 ASP H . 17881 1 
+       32 . 1 1 16 16 ASP N N 15 121.66 0.1  . 1 . . . .  93 ASP N . 17881 1 
+       33 . 1 1 17 17 LYS H H  1   8.41 0.01 . 1 . . . .  94 LYS H . 17881 1 
+       34 . 1 1 17 17 LYS N N 15 124.71 0.1  . 1 . . . .  94 LYS N . 17881 1 
+       35 . 1 1 18 18 ASP H H  1   8.63 0.01 . 1 . . . .  95 ASP H . 17881 1 
+       36 . 1 1 18 18 ASP N N 15 116.36 0.1  . 1 . . . .  95 ASP N . 17881 1 
+       37 . 1 1 19 19 GLY H H  1   8.03 0.01 . 1 . . . .  96 GLY H . 17881 1 
+       38 . 1 1 19 19 GLY N N 15 110.52 0.1  . 1 . . . .  96 GLY N . 17881 1 
+       39 . 1 1 20 20 ASN H H  1   9.01 0.01 . 1 . . . .  97 ASN H . 17881 1 
+       40 . 1 1 20 20 ASN N N 15 119.15 0.1  . 1 . . . .  97 ASN N . 17881 1 
+       41 . 1 1 21 21 GLY H H  1  10.04 0.01 . 1 . . . .  98 GLY H . 17881 1 
+       42 . 1 1 21 21 GLY N N 15 110.61 0.1  . 1 . . . .  98 GLY N . 17881 1 
+       43 . 1 1 22 22 TYR H H  1   7.82 0.01 . 1 . . . .  99 TYR H . 17881 1 
+       44 . 1 1 22 22 TYR N N 15 118.61 0.1  . 1 . . . .  99 TYR N . 17881 1 
+       45 . 1 1 23 23 ILE H H  1   8.62 0.01 . 1 . . . . 100 ILE H . 17881 1 
+       46 . 1 1 23 23 ILE N N 15 113.38 0.1  . 1 . . . . 100 ILE N . 17881 1 
+       47 . 1 1 24 24 SER H H  1   8.94 0.01 . 1 . . . . 101 SER H . 17881 1 
+       48 . 1 1 24 24 SER N N 15 117.55 0.1  . 1 . . . . 101 SER N . 17881 1 
+       49 . 1 1 25 25 ALA H H  1   8.83 0.01 . 1 . . . . 102 ALA H . 17881 1 
+       50 . 1 1 25 25 ALA N N 15 124.99 0.1  . 1 . . . . 102 ALA N . 17881 1 
+       51 . 1 1 26 26 ALA H H  1   8.27 0.01 . 1 . . . . 103 ALA H . 17881 1 
+       52 . 1 1 26 26 ALA N N 15 119.24 0.1  . 1 . . . . 103 ALA N . 17881 1 
+       53 . 1 1 27 27 GLU H H  1   7.74 0.01 . 1 . . . . 104 GLU H . 17881 1 
+       54 . 1 1 27 27 GLU N N 15 120.24 0.1  . 1 . . . . 104 GLU N . 17881 1 
+       55 . 1 1 28 28 LEU H H  1   8.21 0.01 . 1 . . . . 105 LEU H . 17881 1 
+       56 . 1 1 28 28 LEU N N 15 121.02 0.1  . 1 . . . . 105 LEU N . 17881 1 
+       57 . 1 1 29 29 ARG H H  1   8.08 0.01 . 1 . . . . 106 ARG H . 17881 1 
+       58 . 1 1 29 29 ARG N N 15 117.45 0.1  . 1 . . . . 106 ARG N . 17881 1 
+       59 . 1 1 30 30 HIS H H  1   7.74 0.01 . 1 . . . . 107 HIS H . 17881 1 
+       60 . 1 1 30 30 HIS N N 15 118.89 0.1  . 1 . . . . 107 HIS N . 17881 1 
+       61 . 1 1 31 31 VAL H H  1   8.13 0.01 . 1 . . . . 108 VAL H . 17881 1 
+       62 . 1 1 31 31 VAL N N 15 119.96 0.1  . 1 . . . . 108 VAL N . 17881 1 
+       63 . 1 1 32 32 MET H H  1   8.16 0.01 . 1 . . . . 109 MET H . 17881 1 
+       64 . 1 1 32 32 MET N N 15 115.54 0.1  . 1 . . . . 109 MET N . 17881 1 
+       65 . 1 1 33 33 THR H H  1   7.95 0.01 . 1 . . . . 110 THR H . 17881 1 
+       66 . 1 1 33 33 THR N N 15 111.33 0.1  . 1 . . . . 110 THR N . 17881 1 
+       67 . 1 1 34 34 ASN H H  1   7.69 0.01 . 1 . . . . 111 ASN H . 17881 1 
+       68 . 1 1 34 34 ASN N N 15 120.37 0.1  . 1 . . . . 111 ASN N . 17881 1 
+       69 . 1 1 35 35 LEU H H  1   7.74 0.01 . 1 . . . . 112 LEU H . 17881 1 
+       70 . 1 1 35 35 LEU N N 15 119.98 0.1  . 1 . . . . 112 LEU N . 17881 1 
+       71 . 1 1 36 36 GLY H H  1   8.20 0.01 . 1 . . . . 113 GLY H . 17881 1 
+       72 . 1 1 36 36 GLY N N 15 108.27 0.1  . 1 . . . . 113 GLY N . 17881 1 
+       73 . 1 1 37 37 GLU H H  1   8.15 0.01 . 1 . . . . 114 GLU H . 17881 1 
+       74 . 1 1 37 37 GLU N N 15 120.41 0.1  . 1 . . . . 114 GLU N . 17881 1 
+       75 . 1 1 38 38 LYS H H  1   8.30 0.01 . 1 . . . . 115 LYS H . 17881 1 
+       76 . 1 1 38 38 LYS N N 15 120.77 0.1  . 1 . . . . 115 LYS N . 17881 1 
+       77 . 1 1 39 39 LEU H H  1   7.79 0.01 . 1 . . . . 116 LEU H . 17881 1 
+       78 . 1 1 39 39 LEU N N 15 121.76 0.1  . 1 . . . . 116 LEU N . 17881 1 
+       79 . 1 1 40 40 THR H H  1   8.99 0.01 . 1 . . . . 117 THR H . 17881 1 
+       80 . 1 1 40 40 THR N N 15 113.85 0.1  . 1 . . . . 117 THR N . 17881 1 
+       81 . 1 1 41 41 ASP H H  1   8.83 0.01 . 1 . . . . 118 ASP H . 17881 1 
+       82 . 1 1 41 41 ASP N N 15 121.24 0.1  . 1 . . . . 118 ASP N . 17881 1 
+       83 . 1 1 42 42 GLU H H  1   8.59 0.01 . 1 . . . . 119 GLU H . 17881 1 
+       84 . 1 1 42 42 GLU N N 15 118.25 0.1  . 1 . . . . 119 GLU N . 17881 1 
+       85 . 1 1 43 43 GLU H H  1   7.80 0.01 . 1 . . . . 120 GLU H . 17881 1 
+       86 . 1 1 43 43 GLU N N 15 120.78 0.1  . 1 . . . . 120 GLU N . 17881 1 
+       87 . 1 1 44 44 VAL H H  1   8.21 0.01 . 1 . . . . 121 VAL H . 17881 1 
+       88 . 1 1 44 44 VAL N N 15 121.02 0.1  . 1 . . . . 121 VAL N . 17881 1 
+       89 . 1 1 45 45 ASP H H  1   8.38 0.01 . 1 . . . . 122 ASP H . 17881 1 
+       90 . 1 1 45 45 ASP N N 15 119.46 0.1  . 1 . . . . 122 ASP N . 17881 1 
+       91 . 1 1 46 46 GLU H H  1   7.87 0.01 . 1 . . . . 123 GLU H . 17881 1 
+       92 . 1 1 46 46 GLU N N 15 119.49 0.1  . 1 . . . . 123 GLU N . 17881 1 
+       93 . 1 1 47 47 MET H H  1   7.89 0.01 . 1 . . . . 124 MET H . 17881 1 
+       94 . 1 1 47 47 MET N N 15 118.97 0.1  . 1 . . . . 124 MET N . 17881 1 
+       95 . 1 1 48 48 ILE H H  1   8.35 0.01 . 1 . . . . 125 ILE H . 17881 1 
+       96 . 1 1 48 48 ILE N N 15 118.61 0.1  . 1 . . . . 125 ILE N . 17881 1 
+       97 . 1 1 49 49 ARG H H  1   7.95 0.01 . 1 . . . . 126 ARG H . 17881 1 
+       98 . 1 1 49 49 ARG N N 15 119.69 0.1  . 1 . . . . 126 ARG N . 17881 1 
+       99 . 1 1 50 50 GLU H H  1   7.82 0.01 . 1 . . . . 127 GLU H . 17881 1 
+      100 . 1 1 50 50 GLU N N 15 117.08 0.1  . 1 . . . . 127 GLU N . 17881 1 
+      101 . 1 1 51 51 ALA H H  1   7.61 0.01 . 1 . . . . 128 ALA H . 17881 1 
+      102 . 1 1 51 51 ALA N N 15 121.82 0.1  . 1 . . . . 128 ALA N . 17881 1 
+      103 . 1 1 52 52 ASP H H  1   8.37 0.01 . 1 . . . . 129 ASP H . 17881 1 
+      104 . 1 1 52 52 ASP N N 15 119.96 0.1  . 1 . . . . 129 ASP N . 17881 1 
+      105 . 1 1 53 53 ILE H H  1   7.85 0.01 . 1 . . . . 130 ILE H . 17881 1 
+      106 . 1 1 53 53 ILE N N 15 121.31 0.1  . 1 . . . . 130 ILE N . 17881 1 
+      107 . 1 1 54 54 ASP H H  1   8.63 0.01 . 1 . . . . 131 ASP H . 17881 1 
+      108 . 1 1 54 54 ASP N N 15 124.44 0.1  . 1 . . . . 131 ASP N . 17881 1 
+      109 . 1 1 55 55 GLY H H  1   8.38 0.01 . 1 . . . . 132 GLY H . 17881 1 
+      110 . 1 1 55 55 GLY N N 15 108.18 0.1  . 1 . . . . 132 GLY N . 17881 1 
+      111 . 1 1 56 56 ASP H H  1   8.31 0.01 . 1 . . . . 133 ASP H . 17881 1 
+      112 . 1 1 56 56 ASP N N 15 119.60 0.1  . 1 . . . . 133 ASP N . 17881 1 
+      113 . 1 1 57 57 GLY H H  1   8.56 0.01 . 1 . . . . 134 GLY H . 17881 1 
+      114 . 1 1 57 57 GLY N N 15 109.81 0.1  . 1 . . . . 134 GLY N . 17881 1 
+      115 . 1 1 58 58 GLN H H  1   8.33 0.01 . 1 . . . . 135 GLN H . 17881 1 
+      116 . 1 1 58 58 GLN N N 15 119.78 0.1  . 1 . . . . 135 GLN N . 17881 1 
+      117 . 1 1 59 59 VAL H H  1   9.43 0.01 . 1 . . . . 136 VAL H . 17881 1 
+      118 . 1 1 59 59 VAL N N 15 119.62 0.1  . 1 . . . . 136 VAL N . 17881 1 
+      119 . 1 1 60 60 ASN H H  1   8.79 0.01 . 1 . . . . 137 ASN H . 17881 1 
+      120 . 1 1 60 60 ASN N N 15 125.44 0.1  . 1 . . . . 137 ASN N . 17881 1 
+      121 . 1 1 61 61 TYR H H  1   7.54 0.01 . 1 . . . . 138 TYR H . 17881 1 
+      122 . 1 1 61 61 TYR N N 15 122.98 0.1  . 1 . . . . 138 TYR N . 17881 1 
+      123 . 1 1 62 62 GLU H H  1   8.16 0.01 . 1 . . . . 139 GLU H . 17881 1 
+      124 . 1 1 62 62 GLU N N 15 126.34 0.1  . 1 . . . . 139 GLU N . 17881 1 
+      125 . 1 1 63 63 GLU H H  1   7.80 0.01 . 1 . . . . 140 GLU H . 17881 1 
+      126 . 1 1 63 63 GLU N N 15 117.52 0.1  . 1 . . . . 140 GLU N . 17881 1 
+      127 . 1 1 64 64 PHE H H  1   7.54 0.01 . 1 . . . . 141 PHE H . 17881 1 
+      128 . 1 1 64 64 PHE N N 15 119.33 0.1  . 1 . . . . 141 PHE N . 17881 1 
+      129 . 1 1 65 65 VAL H H  1   8.20 0.01 . 1 . . . . 142 VAL H . 17881 1 
+      130 . 1 1 65 65 VAL N N 15 120.17 0.1  . 1 . . . . 142 VAL N . 17881 1 
+      131 . 1 1 66 66 GLN H H  1   7.87 0.01 . 1 . . . . 143 GLN H . 17881 1 
+      132 . 1 1 66 66 GLN N N 15 117.44 0.1  . 1 . . . . 143 GLN N . 17881 1 
+      133 . 1 1 67 67 MET H H  1   7.77 0.01 . 1 . . . . 144 MET H . 17881 1 
+      134 . 1 1 67 67 MET N N 15 118.41 0.1  . 1 . . . . 144 MET N . 17881 1 
+      135 . 1 1 68 68 MET H H  1   8.00 0.01 . 1 . . . . 145 MET H . 17881 1 
+      136 . 1 1 68 68 MET N N 15 116.44 0.1  . 1 . . . . 145 MET N . 17881 1 
+      137 . 1 1 69 69 THR H H  1   7.72 0.01 . 1 . . . . 146 THR H . 17881 1 
+      138 . 1 1 69 69 THR N N 15 110.45 0.1  . 1 . . . . 146 THR N . 17881 1 
+      139 . 1 1 70 70 ALA H H  1   7.60 0.01 . 1 . . . . 147 ALA H . 17881 1 
+      140 . 1 1 70 70 ALA N N 15 125.70 0.1  . 1 . . . . 147 ALA N . 17881 1 
+      141 . 1 1 71 71 LYS H H  1   7.67 0.01 . 1 . . . . 148 LYS H . 17881 1 
+      142 . 1 1 71 71 LYS N N 15 125.60 0.1  . 1 . . . . 148 LYS N . 17881 1 
+
+   stop_
+
+save_
+
+
+    ##############################
+    #  Heteronuclear NOE values  #
+    ##############################
+
+save_noe_apo_C-CaM
+   _Heteronucl_NOE_list.Sf_category                   heteronucl_NOEs
+   _Heteronucl_NOE_list.Sf_framecode                  noe_apo_C-CaM
+   _Heteronucl_NOE_list.Entry_ID                      17881
+   _Heteronucl_NOE_list.ID                            1
+   _Heteronucl_NOE_list.Sample_condition_list_ID      1
+   _Heteronucl_NOE_list.Sample_condition_list_label  $sample_conditions_1
+   _Heteronucl_NOE_list.Spectrometer_frequency_1H     600.13
+   _Heteronucl_NOE_list.Heteronuclear_NOE_val_type   'relative intensities'
+   _Heteronucl_NOE_list.NOE_ref_val                   1
+   _Heteronucl_NOE_list.NOE_ref_description           .
+   _Heteronucl_NOE_list.Details                      
+;
+NOE values were measured from spectra with and without proton saturation
+recorded in an interleaved manner. Proton saturation was acquired with the use
+of 120o 1H pulse applied by every 5.0 s.  In the case of the NONOE spectra, a
+net relaxation delay of 5.0 s was employed, while a relaxation delay of 2.0 s
+prior to a 3.0 s proton presaturation period was employed for the NOE spectra.
+;
+   _Heteronucl_NOE_list.Text_data_format              .
+   _Heteronucl_NOE_list.Text_data                     .
+
+   loop_
+      _Heteronucl_NOE_experiment.Experiment_ID
+      _Heteronucl_NOE_experiment.Experiment_name
+      _Heteronucl_NOE_experiment.Sample_ID
+      _Heteronucl_NOE_experiment.Sample_label
+      _Heteronucl_NOE_experiment.Sample_state
+      _Heteronucl_NOE_experiment.Entry_ID
+      _Heteronucl_NOE_experiment.Heteronucl_NOE_list_ID
+
+      3 NOE . . . 17881 1 
+
+   stop_
+
+   loop_
+      _Heteronucl_NOE.ID
+      _Heteronucl_NOE.Assembly_atom_ID_1
+      _Heteronucl_NOE.Entity_assembly_ID_1
+      _Heteronucl_NOE.Entity_ID_1
+      _Heteronucl_NOE.Comp_index_ID_1
+      _Heteronucl_NOE.Seq_ID_1
+      _Heteronucl_NOE.Comp_ID_1
+      _Heteronucl_NOE.Atom_ID_1
+      _Heteronucl_NOE.Atom_type_1
+      _Heteronucl_NOE.Atom_isotope_number_1
+      _Heteronucl_NOE.Assembly_atom_ID_2
+      _Heteronucl_NOE.Entity_assembly_ID_2
+      _Heteronucl_NOE.Entity_ID_2
+      _Heteronucl_NOE.Comp_index_ID_2
+      _Heteronucl_NOE.Seq_ID_2
+      _Heteronucl_NOE.Comp_ID_2
+      _Heteronucl_NOE.Atom_ID_2
+      _Heteronucl_NOE.Atom_type_2
+      _Heteronucl_NOE.Atom_isotope_number_2
+      _Heteronucl_NOE.Val
+      _Heteronucl_NOE.Val_err
+      _Heteronucl_NOE.Resonance_ID_1
+      _Heteronucl_NOE.Resonance_ID_2
+      _Heteronucl_NOE.Auth_entity_assembly_ID_1
+      _Heteronucl_NOE.Auth_seq_ID_1
+      _Heteronucl_NOE.Auth_comp_ID_1
+      _Heteronucl_NOE.Auth_atom_ID_1
+      _Heteronucl_NOE.Auth_entity_assembly_ID_2
+      _Heteronucl_NOE.Auth_seq_ID_2
+      _Heteronucl_NOE.Auth_comp_ID_2
+      _Heteronucl_NOE.Auth_atom_ID_2
+      _Heteronucl_NOE.Entry_ID
+      _Heteronucl_NOE.Heteronucl_NOE_list_ID
+
+       1 . 1 1  1  1 ASP N N 15 . 1 1  1  1 ASP H H 1 -0.0123 -0.0130 . . .  78 ASP N .  78 ASP H 17881 1 
+       2 . 1 1  2  2 THR N N 15 . 1 1  2  2 THR H H 1  0.2181  0.0129 . . .  79 THR N .  79 THR H 17881 1 
+       3 . 1 1  3  3 ASP N N 15 . 1 1  3  3 ASP H H 1  0.3210  0.0153 . . .  80 ASP N .  80 ASP H 17881 1 
+       4 . 1 1  4  4 SER N N 15 . 1 1  4  4 SER H H 1  0.5244  0.0156 . . .  81 SER N .  81 SER H 17881 1 
+       5 . 1 1  5  5 GLU N N 15 . 1 1  5  5 GLU H H 1  0.6796  0.0172 . . .  82 GLU N .  82 GLU H 17881 1 
+       6 . 1 1  6  6 GLU N N 15 . 1 1  6  6 GLU H H 1  0.7140  0.0186 . . .  83 GLU N .  83 GLU H 17881 1 
+       7 . 1 1  7  7 GLU N N 15 . 1 1  7  7 GLU H H 1  0.6804  0.0187 . . .  84 GLU N .  84 GLU H 17881 1 
+       8 . 1 1  8  8 ILE N N 15 . 1 1  8  8 ILE H H 1  0.6896  0.0197 . . .  85 ILE N .  85 ILE H 17881 1 
+       9 . 1 1 10 10 GLU N N 15 . 1 1 10 10 GLU H H 1  0.7301  0.0220 . . .  87 GLU N .  87 GLU H 17881 1 
+      10 . 1 1 11 11 ALA N N 15 . 1 1 11 11 ALA H H 1  0.7421  0.0250 . . .  88 ALA N .  88 ALA H 17881 1 
+      11 . 1 1 12 12 PHE N N 15 . 1 1 12 12 PHE H H 1  0.7433  0.0345 . . .  89 PHE N .  89 PHE H 17881 1 
+      12 . 1 1 13 13 ARG N N 15 . 1 1 13 13 ARG H H 1  0.7616  0.0259 . . .  90 ARG N .  90 ARG H 17881 1 
+      13 . 1 1 14 14 VAL N N 15 . 1 1 14 14 VAL H H 1  0.7670  0.0269 . . .  91 VAL N .  91 VAL H 17881 1 
+      14 . 1 1 15 15 PHE N N 15 . 1 1 15 15 PHE H H 1  0.8185  0.0514 . . .  92 PHE N .  92 PHE H 17881 1 
+      15 . 1 1 16 16 ASP N N 15 . 1 1 16 16 ASP H H 1  0.7855  0.0283 . . .  93 ASP N .  93 ASP H 17881 1 
+      16 . 1 1 17 17 LYS N N 15 . 1 1 17 17 LYS H H 1  0.5787  0.0169 . . .  94 LYS N .  94 LYS H 17881 1 
+      17 . 1 1 18 18 ASP N N 15 . 1 1 18 18 ASP H H 1  0.5665  0.0234 . . .  95 ASP N .  95 ASP H 17881 1 
+      18 . 1 1 19 19 GLY N N 15 . 1 1 19 19 GLY H H 1  0.6816  0.0231 . . .  96 GLY N .  96 GLY H 17881 1 
+      19 . 1 1 20 20 ASN N N 15 . 1 1 20 20 ASN H H 1  0.6542  0.0293 . . .  97 ASN N .  97 ASN H 17881 1 
+      20 . 1 1 21 21 GLY N N 15 . 1 1 21 21 GLY H H 1  0.7596  0.0680 . . .  98 GLY N .  98 GLY H 17881 1 
+      21 . 1 1 22 22 TYR N N 15 . 1 1 22 22 TYR H H 1  0.7768  0.0376 . . .  99 TYR N .  99 TYR H 17881 1 
+      22 . 1 1 23 23 ILE N N 15 . 1 1 23 23 ILE H H 1  0.7160  0.0504 . . . 100 ILE N . 100 ILE H 17881 1 
+      23 . 1 1 24 24 SER N N 15 . 1 1 24 24 SER H H 1  0.7153  0.0320 . . . 101 SER N . 101 SER H 17881 1 
+      24 . 1 1 25 25 ALA N N 15 . 1 1 25 25 ALA H H 1  0.8828  0.0249 . . . 102 ALA N . 102 ALA H 17881 1 
+      25 . 1 1 26 26 ALA N N 15 . 1 1 26 26 ALA H H 1  0.7225  0.0170 . . . 103 ALA N . 103 ALA H 17881 1 
+      26 . 1 1 27 27 GLU N N 15 . 1 1 27 27 GLU H H 1  0.7530  0.0279 . . . 104 GLU N . 104 GLU H 17881 1 
+      27 . 1 1 28 28 LEU N N 15 . 1 1 28 28 LEU H H 1  0.7886  0.0243 . . . 105 LEU N . 105 LEU H 17881 1 
+      28 . 1 1 29 29 ARG N N 15 . 1 1 29 29 ARG H H 1  0.7672  0.0220 . . . 106 ARG N . 106 ARG H 17881 1 
+      29 . 1 1 30 30 HIS N N 15 . 1 1 30 30 HIS H H 1  0.7752  0.0215 . . . 107 HIS N . 107 HIS H 17881 1 
+      30 . 1 1 31 31 VAL N N 15 . 1 1 31 31 VAL H H 1  0.7777  0.0215 . . . 108 VAL N . 108 VAL H 17881 1 
+      31 . 1 1 32 32 MET N N 15 . 1 1 32 32 MET H H 1  0.7391  0.0277 . . . 109 MET N . 109 MET H 17881 1 
+      32 . 1 1 33 33 THR N N 15 . 1 1 33 33 THR H H 1  0.7212  0.0249 . . . 110 THR N . 110 THR H 17881 1 
+      33 . 1 1 34 34 ASN N N 15 . 1 1 34 34 ASN H H 1  0.7044  0.0302 . . . 111 ASN N . 111 ASN H 17881 1 
+      34 . 1 1 35 35 LEU N N 15 . 1 1 35 35 LEU H H 1  0.6899  0.0219 . . . 112 LEU N . 112 LEU H 17881 1 
+      35 . 1 1 36 36 GLY N N 15 . 1 1 36 36 GLY H H 1  0.6666  0.0199 . . . 113 GLY N . 113 GLY H 17881 1 
+      36 . 1 1 37 37 GLU N N 15 . 1 1 37 37 GLU H H 1  0.5925  0.0192 . . . 114 GLU N . 114 GLU H 17881 1 
+      37 . 1 1 38 38 LYS N N 15 . 1 1 38 38 LYS H H 1  0.4195  0.0186 . . . 115 LYS N . 115 LYS H 17881 1 
+      38 . 1 1 39 39 LEU N N 15 . 1 1 39 39 LEU H H 1  0.5653  0.0251 . . . 116 LEU N . 116 LEU H 17881 1 
+      39 . 1 1 40 40 THR N N 15 . 1 1 40 40 THR H H 1  0.6128  0.0294 . . . 117 THR N . 117 THR H 17881 1 
+      40 . 1 1 41 41 ASP N N 15 . 1 1 41 41 ASP H H 1  0.7791  0.0191 . . . 118 ASP N . 118 ASP H 17881 1 
+      41 . 1 1 42 42 GLU N N 15 . 1 1 42 42 GLU H H 1  0.7117  0.0182 . . . 119 GLU N . 119 GLU H 17881 1 
+      42 . 1 1 43 43 GLU N N 15 . 1 1 43 43 GLU H H 1  0.7812  0.0225 . . . 120 GLU N . 120 GLU H 17881 1 
+      43 . 1 1 44 44 VAL N N 15 . 1 1 44 44 VAL H H 1  0.7484  0.0184 . . . 121 VAL N . 121 VAL H 17881 1 
+      44 . 1 1 46 46 GLU N N 15 . 1 1 46 46 GLU H H 1  0.7713  0.0180 . . . 123 GLU N . 123 GLU H 17881 1 
+      45 . 1 1 47 47 MET N N 15 . 1 1 47 47 MET H H 1  0.7130  0.0202 . . . 124 MET N . 124 MET H 17881 1 
+      46 . 1 1 48 48 ILE N N 15 . 1 1 48 48 ILE H H 1  0.7137  0.0221 . . . 125 ILE N . 125 ILE H 17881 1 
+      47 . 1 1 49 49 ARG N N 15 . 1 1 49 49 ARG H H 1  0.6835  0.0204 . . . 126 ARG N . 126 ARG H 17881 1 
+      48 . 1 1 50 50 GLU N N 15 . 1 1 50 50 GLU H H 1  0.6934  0.0292 . . . 127 GLU N . 127 GLU H 17881 1 
+      49 . 1 1 51 51 ALA N N 15 . 1 1 51 51 ALA H H 1  0.7059  0.0208 . . . 128 ALA N . 128 ALA H 17881 1 
+      50 . 1 1 52 52 ASP N N 15 . 1 1 52 52 ASP H H 1  0.6238  0.0247 . . . 129 ASP N . 129 ASP H 17881 1 
+      51 . 1 1 53 53 ILE N N 15 . 1 1 53 53 ILE H H 1  0.6994  0.0265 . . . 130 ILE N . 130 ILE H 17881 1 
+      52 . 1 1 54 54 ASP N N 15 . 1 1 54 54 ASP H H 1  0.5856  0.0301 . . . 131 ASP N . 131 ASP H 17881 1 
+      53 . 1 1 55 55 GLY N N 15 . 1 1 55 55 GLY H H 1  0.6014  0.0251 . . . 132 GLY N . 132 GLY H 17881 1 
+      54 . 1 1 56 56 ASP N N 15 . 1 1 56 56 ASP H H 1  0.6116  0.0241 . . . 133 ASP N . 133 ASP H 17881 1 
+      55 . 1 1 57 57 GLY N N 15 . 1 1 57 57 GLY H H 1  0.6474  0.0434 . . . 134 GLY N . 134 GLY H 17881 1 
+      56 . 1 1 58 58 GLN N N 15 . 1 1 58 58 GLN H H 1  0.5747  0.0259 . . . 135 GLN N . 135 GLN H 17881 1 
+      57 . 1 1 59 59 VAL N N 15 . 1 1 59 59 VAL H H 1  0.6943  0.0471 . . . 136 VAL N . 136 VAL H 17881 1 
+      58 . 1 1 60 60 ASN N N 15 . 1 1 60 60 ASN H H 1  0.7293  0.0249 . . . 137 ASN N . 137 ASN H 17881 1 
+      59 . 1 1 61 61 TYR N N 15 . 1 1 61 61 TYR H H 1  0.7633  0.0447 . . . 138 TYR N . 138 TYR H 17881 1 
+      60 . 1 1 62 62 GLU N N 15 . 1 1 62 62 GLU H H 1  0.7494  0.0374 . . . 139 GLU N . 139 GLU H 17881 1 
+      61 . 1 1 63 63 GLU N N 15 . 1 1 63 63 GLU H H 1  0.7968  0.0281 . . . 140 GLU N . 140 GLU H 17881 1 
+      62 . 1 1 64 64 PHE N N 15 . 1 1 64 64 PHE H H 1  0.7353  0.0373 . . . 141 PHE N . 141 PHE H 17881 1 
+      63 . 1 1 65 65 VAL N N 15 . 1 1 65 65 VAL H H 1  0.8090  0.0242 . . . 142 VAL N . 142 VAL H 17881 1 
+      64 . 1 1 66 66 GLN N N 15 . 1 1 66 66 GLN H H 1  0.7850  0.0260 . . . 143 GLN N . 143 GLN H 17881 1 
+      65 . 1 1 67 67 MET N N 15 . 1 1 67 67 MET H H 1  0.6983  0.0195 . . . 144 MET N . 144 MET H 17881 1 
+      66 . 1 1 68 68 MET N N 15 . 1 1 68 68 MET H H 1  0.6810  0.0215 . . . 145 MET N . 145 MET H 17881 1 
+      67 . 1 1 69 69 THR N N 15 . 1 1 69 69 THR H H 1  0.6286  0.0233 . . . 146 THR N . 146 THR H 17881 1 
+      68 . 1 1 70 70 ALA N N 15 . 1 1 70 70 ALA H H 1  0.4811  0.0150 . . . 147 ALA N . 147 ALA H 17881 1 
+      69 . 1 1 71 71 LYS N N 15 . 1 1 71 71 LYS H H 1 -0.0446 -0.0111 . . . 148 LYS N . 148 LYS H 17881 1 
+
+   stop_
+
+save_
+
+
+    ########################################
+    #  Heteronuclear T1 relaxation values  #
+    ########################################
+
+save_T1_apo_C-CaM
+   _Heteronucl_T1_list.Sf_category                   heteronucl_T1_relaxation
+   _Heteronucl_T1_list.Sf_framecode                  T1_apo_C-CaM
+   _Heteronucl_T1_list.Entry_ID                      17881
+   _Heteronucl_T1_list.ID                            1
+   _Heteronucl_T1_list.Sample_condition_list_ID      1
+   _Heteronucl_T1_list.Sample_condition_list_label  $sample_conditions_1
+   _Heteronucl_T1_list.Spectrometer_frequency_1H     600.13
+   _Heteronucl_T1_list.T1_coherence_type             Nz
+   _Heteronucl_T1_list.T1_val_units                  s-1
+   _Heteronucl_T1_list.Details                       .
+   _Heteronucl_T1_list.Text_data_format              .
+   _Heteronucl_T1_list.Text_data                     .
+
+   loop_
+      _Heteronucl_T1_experiment.Experiment_ID
+      _Heteronucl_T1_experiment.Experiment_name
+      _Heteronucl_T1_experiment.Sample_ID
+      _Heteronucl_T1_experiment.Sample_label
+      _Heteronucl_T1_experiment.Sample_state
+      _Heteronucl_T1_experiment.Entry_ID
+      _Heteronucl_T1_experiment.Heteronucl_T1_list_ID
+
+      1 T1 . . . 17881 1 
+
+   stop_
+
+   loop_
+      _T1.ID
+      _T1.Assembly_atom_ID
+      _T1.Entity_assembly_ID
+      _T1.Entity_ID
+      _T1.Comp_index_ID
+      _T1.Seq_ID
+      _T1.Comp_ID
+      _T1.Atom_ID
+      _T1.Atom_type
+      _T1.Atom_isotope_number
+      _T1.Val
+      _T1.Val_err
+      _T1.Resonance_ID
+      _T1.Auth_entity_assembly_ID
+      _T1.Auth_seq_ID
+      _T1.Auth_comp_ID
+      _T1.Auth_atom_ID
+      _T1.Entry_ID
+      _T1.Heteronucl_T1_list_ID
+
+       1 . 1 1  1  1 ASP N N 15 1.85 0.03 . .  78 ASP N 17881 1 
+       2 . 1 1  2  2 THR N N 15 1.95 0.02 . .  79 THR N 17881 1 
+       3 . 1 1  3  3 ASP N N 15 2.06 0.01 . .  80 ASP N 17881 1 
+       4 . 1 1  4  4 SER N N 15 2.15 0.02 . .  81 SER N 17881 1 
+       5 . 1 1  5  5 GLU N N 15 2.19 0.01 . .  82 GLU N 17881 1 
+       6 . 1 1  6  6 GLU N N 15 2.12 0.01 . .  83 GLU N 17881 1 
+       7 . 1 1  7  7 GLU N N 15 2.19 0.01 . .  84 GLU N 17881 1 
+       8 . 1 1  8  8 ILE N N 15 2.21 0.01 . .  85 ILE N 17881 1 
+       9 . 1 1 10 10 GLU N N 15 2.20 0.01 . .  87 GLU N 17881 1 
+      10 . 1 1 11 11 ALA N N 15 2.29 0.02 . .  88 ALA N 17881 1 
+      11 . 1 1 12 12 PHE N N 15 2.19 0.01 . .  89 PHE N 17881 1 
+      12 . 1 1 13 13 ARG N N 15 2.20 0.01 . .  90 ARG N 17881 1 
+      13 . 1 1 14 14 VAL N N 15 2.24 0.02 . .  91 VAL N 17881 1 
+      14 . 1 1 15 15 PHE N N 15 2.23 0.03 . .  92 PHE N 17881 1 
+      15 . 1 1 16 16 ASP N N 15 2.10 0.02 . .  93 ASP N 17881 1 
+      16 . 1 1 17 17 LYS N N 15 1.88 0.01 . .  94 LYS N 17881 1 
+      17 . 1 1 18 18 ASP N N 15 1.99 0.02 . .  95 ASP N 17881 1 
+      18 . 1 1 19 19 GLY N N 15 2.15 0.02 . .  96 GLY N 17881 1 
+      19 . 1 1 20 20 ASN N N 15 2.09 0.02 . .  97 ASN N 17881 1 
+      20 . 1 1 21 21 GLY N N 15 2.28 0.05 . .  98 GLY N 17881 1 
+      21 . 1 1 22 22 TYR N N 15 2.31 0.02 . .  99 TYR N 17881 1 
+      22 . 1 1 23 23 ILE N N 15 2.18 0.03 . . 100 ILE N 17881 1 
+      23 . 1 1 24 24 SER N N 15 2.22 0.02 . . 101 SER N 17881 1 
+      24 . 1 1 25 25 ALA N N 15 2.18 0.01 . . 102 ALA N 17881 1 
+      25 . 1 1 26 26 ALA N N 15 2.28 0.01 . . 103 ALA N 17881 1 
+      26 . 1 1 27 27 GLU N N 15 2.27 0.02 . . 104 GLU N 17881 1 
+      27 . 1 1 28 28 LEU N N 15 2.10 0.04 . . 105 LEU N 17881 1 
+      28 . 1 1 29 29 ARG N N 15 2.24 0.02 . . 106 ARG N 17881 1 
+      29 . 1 1 30 30 HIS N N 15 2.28 0.01 . . 107 HIS N 17881 1 
+      30 . 1 1 31 31 VAL N N 15 2.21 0.01 . . 108 VAL N 17881 1 
+      31 . 1 1 32 32 MET N N 15 2.23 0.02 . . 109 MET N 17881 1 
+      32 . 1 1 33 33 THR N N 15 2.26 0.02 . . 110 THR N 17881 1 
+      33 . 1 1 34 34 ASN N N 15 2.25 0.03 . . 111 ASN N 17881 1 
+      34 . 1 1 35 35 LEU N N 15 2.04 0.02 . . 112 LEU N 17881 1 
+      35 . 1 1 36 36 GLY N N 15 2.08 0.01 . . 113 GLY N 17881 1 
+      36 . 1 1 37 37 GLU N N 15 2.10 0.01 . . 114 GLU N 17881 1 
+      37 . 1 1 38 38 LYS N N 15 2.03 0.01 . . 115 LYS N 17881 1 
+      38 . 1 1 39 39 LEU N N 15 1.87 0.01 . . 116 LEU N 17881 1 
+      39 . 1 1 40 40 THR N N 15 2.14 0.02 . . 117 THR N 17881 1 
+      40 . 1 1 41 41 ASP N N 15 2.19 0.02 . . 118 ASP N 17881 1 
+      41 . 1 1 42 42 GLU N N 15 2.21 0.07 . . 119 GLU N 17881 1 
+      42 . 1 1 43 43 GLU N N 15 2.24 0.02 . . 120 GLU N 17881 1 
+      43 . 1 1 44 44 VAL N N 15 2.27 0.03 . . 121 VAL N 17881 1 
+      44 . 1 1 46 46 GLU N N 15 2.21 0.02 . . 123 GLU N 17881 1 
+      45 . 1 1 47 47 MET N N 15 2.26 0.01 . . 124 MET N 17881 1 
+      46 . 1 1 48 48 ILE N N 15 2.23 0.02 . . 125 ILE N 17881 1 
+      47 . 1 1 49 49 ARG N N 15 2.23 0.02 . . 126 ARG N 17881 1 
+      48 . 1 1 50 50 GLU N N 15 2.17 0.01 . . 127 GLU N 17881 1 
+      49 . 1 1 51 51 ALA N N 15 2.12 0.02 . . 128 ALA N 17881 1 
+      50 . 1 1 52 52 ASP N N 15 2.00 0.01 . . 129 ASP N 17881 1 
+      51 . 1 1 53 53 ILE N N 15 1.90 0.02 . . 130 ILE N 17881 1 
+      52 . 1 1 54 54 ASP N N 15 2.03 0.02 . . 131 ASP N 17881 1 
+      53 . 1 1 55 55 GLY N N 15 2.17 0.02 . . 132 GLY N 17881 1 
+      54 . 1 1 56 56 ASP N N 15 2.11 0.03 . . 133 ASP N 17881 1 
+      55 . 1 1 57 57 GLY N N 15 2.14 0.03 . . 134 GLY N 17881 1 
+      56 . 1 1 58 58 GLN N N 15 2.03 0.04 . . 135 GLN N 17881 1 
+      57 . 1 1 59 59 VAL N N 15 2.17 0.01 . . 136 VAL N 17881 1 
+      58 . 1 1 60 60 ASN N N 15 2.16 0.02 . . 137 ASN N 17881 1 
+      59 . 1 1 61 61 TYR N N 15 2.17 0.02 . . 138 TYR N 17881 1 
+      60 . 1 1 62 62 GLU N N 15 2.26 0.02 . . 139 GLU N 17881 1 
+      61 . 1 1 63 63 GLU N N 15 2.17 0.02 . . 140 GLU N 17881 1 
+      62 . 1 1 64 64 PHE N N 15 2.19 0.02 . . 141 PHE N 17881 1 
+      63 . 1 1 65 65 VAL N N 15 2.22 0.02 . . 142 VAL N 17881 1 
+      64 . 1 1 66 66 GLN N N 15 2.20 0.01 . . 143 GLN N 17881 1 
+      65 . 1 1 67 67 MET N N 15 2.15 0.01 . . 144 MET N 17881 1 
+      66 . 1 1 68 68 MET N N 15 2.20 0.02 . . 145 MET N 17881 1 
+      67 . 1 1 69 69 THR N N 15 2.16 0.01 . . 146 THR N 17881 1 
+      68 . 1 1 70 70 ALA N N 15 2.01 0.01 . . 147 ALA N 17881 1 
+      69 . 1 1 71 71 LYS N N 15 1.51 0.01 . . 148 LYS N 17881 1 
+
+   stop_
+
+save_
+
+
+    ########################################
+    #  Heteronuclear T2 relaxation values  #
+    ########################################
+
+save_T2_apo_C-CaM
+   _Heteronucl_T2_list.Sf_category                   heteronucl_T2_relaxation
+   _Heteronucl_T2_list.Sf_framecode                  T2_apo_C-CaM
+   _Heteronucl_T2_list.Entry_ID                      17881
+   _Heteronucl_T2_list.ID                            1
+   _Heteronucl_T2_list.Sample_condition_list_ID      1
+   _Heteronucl_T2_list.Sample_condition_list_label  $sample_conditions_1
+   _Heteronucl_T2_list.Temp_calibration_method       methanol
+   _Heteronucl_T2_list.Temp_control_method          'temperature compensation block'
+   _Heteronucl_T2_list.Spectrometer_frequency_1H     600.13
+   _Heteronucl_T2_list.T2_coherence_type             Nx
+   _Heteronucl_T2_list.T2_val_units                  s-1
+   _Heteronucl_T2_list.Rex_units                     s-1
+   _Heteronucl_T2_list.Details                       .
+   _Heteronucl_T2_list.Text_data_format              .
+   _Heteronucl_T2_list.Text_data                     .
+
+   loop_
+      _Heteronucl_T2_experiment.Experiment_ID
+      _Heteronucl_T2_experiment.Experiment_name
+      _Heteronucl_T2_experiment.Sample_ID
+      _Heteronucl_T2_experiment.Sample_label
+      _Heteronucl_T2_experiment.Sample_state
+      _Heteronucl_T2_experiment.Entry_ID
+      _Heteronucl_T2_experiment.Heteronucl_T2_list_ID
+
+      2 T2 . . . 17881 1 
+
+   stop_
+
+   loop_
+      _T2.ID
+      _T2.Assembly_atom_ID
+      _T2.Entity_assembly_ID
+      _T2.Entity_ID
+      _T2.Comp_index_ID
+      _T2.Seq_ID
+      _T2.Comp_ID
+      _T2.Atom_ID
+      _T2.Atom_type
+      _T2.Atom_isotope_number
+      _T2.T2_val
+      _T2.T2_val_err
+      _T2.Rex_val
+      _T2.Rex_err
+      _T2.Resonance_ID
+      _T2.Auth_entity_assembly_ID
+      _T2.Auth_seq_ID
+      _T2.Auth_comp_ID
+      _T2.Auth_atom_ID
+      _T2.Entry_ID
+      _T2.Heteronucl_T2_list_ID
+
+       1 . 1 1  1  1 ASP N N 15  5.44 0.13 . . . .  78 ASP N 17881 1 
+       2 . 1 1  2  2 THR N N 15  5.32 0.09 . . . .  79 THR N 17881 1 
+       3 . 1 1  3  3 ASP N N 15  5.27 0.11 . . . .  80 ASP N 17881 1 
+       4 . 1 1  4  4 SER N N 15  6.24 0.07 . . . .  81 SER N 17881 1 
+       5 . 1 1  5  5 GLU N N 15  6.59 0.17 . . . .  82 GLU N 17881 1 
+       6 . 1 1  6  6 GLU N N 15  7.87 0.07 . . . .  83 GLU N 17881 1 
+       7 . 1 1  7  7 GLU N N 15  7.21 0.09 . . . .  84 GLU N 17881 1 
+       8 . 1 1  8  8 ILE N N 15  6.95 0.03 . . . .  85 ILE N 17881 1 
+       9 . 1 1 10 10 GLU N N 15  9.75 0.09 . . . .  87 GLU N 17881 1 
+      10 . 1 1 11 11 ALA N N 15  7.38 0.20 . . . .  88 ALA N 17881 1 
+      11 . 1 1 12 12 PHE N N 15  9.19 0.11 . . . .  89 PHE N 17881 1 
+      12 . 1 1 13 13 ARG N N 15 10.32 0.13 . . . .  90 ARG N 17881 1 
+      13 . 1 1 14 14 VAL N N 15  7.55 0.07 . . . .  91 VAL N 17881 1 
+      14 . 1 1 15 15 PHE N N 15 12.20 0.17 . . . .  92 PHE N 17881 1 
+      15 . 1 1 16 16 ASP N N 15  6.93 0.16 . . . .  93 ASP N 17881 1 
+      16 . 1 1 17 17 LYS N N 15  6.49 0.27 . . . .  94 LYS N 17881 1 
+      17 . 1 1 18 18 ASP N N 15  7.28 0.07 . . . .  95 ASP N 17881 1 
+      18 . 1 1 19 19 GLY N N 15  6.67 0.24 . . . .  96 GLY N 17881 1 
+      19 . 1 1 20 20 ASN N N 15  6.15 0.09 . . . .  97 ASN N 17881 1 
+      20 . 1 1 21 21 GLY N N 15  6.98 0.11 . . . .  98 GLY N 17881 1 
+      21 . 1 1 22 22 TYR N N 15  8.93 0.12 . . . .  99 TYR N 17881 1 
+      22 . 1 1 23 23 ILE N N 15 15.88 0.27 . . . . 100 ILE N 17881 1 
+      23 . 1 1 24 24 SER N N 15  7.34 0.09 . . . . 101 SER N 17881 1 
+      24 . 1 1 25 25 ALA N N 15  7.35 0.16 . . . . 102 ALA N 17881 1 
+      25 . 1 1 26 26 ALA N N 15  7.48 0.06 . . . . 103 ALA N 17881 1 
+      26 . 1 1 27 27 GLU N N 15  7.45 0.07 . . . . 104 GLU N 17881 1 
+      27 . 1 1 28 28 LEU N N 15  6.62 0.28 . . . . 105 LEU N 17881 1 
+      28 . 1 1 29 29 ARG N N 15  7.21 0.07 . . . . 106 ARG N 17881 1 
+      29 . 1 1 30 30 HIS N N 15  7.84 0.08 . . . . 107 HIS N 17881 1 
+      30 . 1 1 31 31 VAL N N 15  7.47 0.14 . . . . 108 VAL N 17881 1 
+      31 . 1 1 32 32 MET N N 15 12.03 0.08 . . . . 109 MET N 17881 1 
+      32 . 1 1 33 33 THR N N 15 10.07 0.10 . . . . 110 THR N 17881 1 
+      33 . 1 1 34 34 ASN N N 15  6.87 0.08 . . . . 111 ASN N 17881 1 
+      34 . 1 1 35 35 LEU N N 15  6.12 0.07 . . . . 112 LEU N 17881 1 
+      35 . 1 1 36 36 GLY N N 15  5.84 0.16 . . . . 113 GLY N 17881 1 
+      36 . 1 1 37 37 GLU N N 15  5.67 0.11 . . . . 114 GLU N 17881 1 
+      37 . 1 1 38 38 LYS N N 15  6.12 0.18 . . . . 115 LYS N 17881 1 
+      38 . 1 1 39 39 LEU N N 15  5.90 0.08 . . . . 116 LEU N 17881 1 
+      39 . 1 1 40 40 THR N N 15  6.26 0.06 . . . . 117 THR N 17881 1 
+      40 . 1 1 41 41 ASP N N 15  6.68 0.06 . . . . 118 ASP N 17881 1 
+      41 . 1 1 42 42 GLU N N 15  7.32 0.06 . . . . 119 GLU N 17881 1 
+      42 . 1 1 43 43 GLU N N 15  6.40 0.07 . . . . 120 GLU N 17881 1 
+      43 . 1 1 44 44 VAL N N 15  6.35 0.11 . . . . 121 VAL N 17881 1 
+      44 . 1 1 46 46 GLU N N 15  6.69 0.06 . . . . 123 GLU N 17881 1 
+      45 . 1 1 47 47 MET N N 15  6.35 0.04 . . . . 124 MET N 17881 1 
+      46 . 1 1 48 48 ILE N N 15  7.23 0.07 . . . . 125 ILE N 17881 1 
+      47 . 1 1 49 49 ARG N N 15  8.77 0.11 . . . . 126 ARG N 17881 1 
+      48 . 1 1 50 50 GLU N N 15  8.68 0.10 . . . . 127 GLU N 17881 1 
+      49 . 1 1 51 51 ALA N N 15  7.08 0.09 . . . . 128 ALA N 17881 1 
+      50 . 1 1 52 52 ASP N N 15  6.77 0.09 . . . . 129 ASP N 17881 1 
+      51 . 1 1 53 53 ILE N N 15  6.51 0.21 . . . . 130 ILE N 17881 1 
+      52 . 1 1 54 54 ASP N N 15 12.12 0.40 . . . . 131 ASP N 17881 1 
+      53 . 1 1 55 55 GLY N N 15  8.07 0.14 . . . . 132 GLY N 17881 1 
+      54 . 1 1 56 56 ASP N N 15  5.70 0.17 . . . . 133 ASP N 17881 1 
+      55 . 1 1 57 57 GLY N N 15  6.32 0.09 . . . . 134 GLY N 17881 1 
+      56 . 1 1 58 58 GLN N N 15  5.80 0.17 . . . . 135 GLN N 17881 1 
+      57 . 1 1 59 59 VAL N N 15  6.82 0.09 . . . . 136 VAL N 17881 1 
+      58 . 1 1 60 60 ASN N N 15  7.16 0.09 . . . . 137 ASN N 17881 1 
+      59 . 1 1 61 61 TYR N N 15  7.76 0.13 . . . . 138 TYR N 17881 1 
+      60 . 1 1 62 62 GLU N N 15 17.34 0.29 . . . . 139 GLU N 17881 1 
+      61 . 1 1 63 63 GLU N N 15  8.03 0.06 . . . . 140 GLU N 17881 1 
+      62 . 1 1 64 64 PHE N N 15  7.66 0.10 . . . . 141 PHE N 17881 1 
+      63 . 1 1 65 65 VAL N N 15  7.01 0.13 . . . . 142 VAL N 17881 1 
+      64 . 1 1 66 66 GLN N N 15  9.13 0.10 . . . . 143 GLN N 17881 1 
+      65 . 1 1 67 67 MET N N 15  6.61 0.05 . . . . 144 MET N 17881 1 
+      66 . 1 1 68 68 MET N N 15  7.80 0.06 . . . . 145 MET N 17881 1 
+      67 . 1 1 69 69 THR N N 15  7.74 0.07 . . . . 146 THR N 17881 1 
+      68 . 1 1 70 70 ALA N N 15  5.89 0.24 . . . . 147 ALA N 17881 1 
+      69 . 1 1 71 71 LYS N N 15  3.18 0.13 . . . . 148 LYS N 17881 1 
+
+   stop_
+
+save_
+
